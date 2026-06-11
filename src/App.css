@@ -1,0 +1,308 @@
+#root {
+  margin: 0 auto;
+  width: min(1200px, 100% - 2rem);
+  padding: 2rem 0 4rem;
+}
+
+.app-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  background: linear-gradient(130deg, rgba(255, 255, 255, 0.95), rgba(231, 255, 251, 0.9));
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 1.5rem;
+  animation: rise 500ms ease;
+}
+
+.hero-kicker {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--accent-2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.3rem, 7vw, 4.3rem);
+  letter-spacing: 0.03em;
+  margin: 0.3rem 0;
+  line-height: 1;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 75ch;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-grid article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.stats-grid h2 {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.1rem;
+}
+
+.stats-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.7rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.row.wrap {
+  flex-wrap: wrap;
+}
+
+input,
+select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-strong);
+  padding: 0.55rem 0.7rem;
+  min-height: 42px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 42px;
+  padding: 0.45rem 0.8rem;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #eff6fa;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.3rem 0.3rem 0.8rem;
+}
+
+.chip button {
+  border-radius: 999px;
+  min-height: 28px;
+  min-width: 28px;
+  padding: 0;
+  background: var(--danger);
+}
+
+.leaderboard {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.leaderboard-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px dashed var(--line);
+  padding: 0.35rem 0;
+}
+
+.segmented {
+  display: inline-flex;
+  gap: 0.3rem;
+  background: #eff5f9;
+  border-radius: 12px;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+}
+
+.segmented button {
+  background: transparent;
+  color: var(--text);
+  min-height: 36px;
+}
+
+.segmented button.active {
+  background: var(--accent);
+  color: white;
+}
+
+.match-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.match-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 0.85rem;
+}
+
+.match-top,
+.teams,
+.prediction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.round,
+.date,
+.status,
+.hint,
+.error {
+  margin: 0.2rem 0;
+}
+
+.round {
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.date,
+.status,
+.hint {
+  color: var(--muted);
+}
+
+.teams {
+  margin: 0.35rem 0;
+  font-weight: 700;
+}
+
+.teams strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.result-pill {
+  display: inline-block;
+  margin: 0.35rem 0;
+  color: #064f3f;
+  background: #e0fff4;
+  border: 1px solid #a8f4dd;
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.prediction-grid {
+  margin-top: 0.65rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.pick-buttons {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.pick {
+  min-height: 30px;
+  min-width: 32px;
+  border-radius: 8px;
+  background: #edf5f8;
+  color: var(--text);
+}
+
+.pick.active {
+  background: #0e4153;
+  color: white;
+}
+
+.pick.active.correct {
+  background: var(--accent-2);
+}
+
+.pick-state {
+  color: var(--muted);
+  font-size: 0.85rem;
+  min-width: 56px;
+  text-align: right;
+}
+
+.pick-state.ok {
+  color: #02644b;
+  font-weight: 700;
+}
+
+.error {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  #root {
+    width: min(1280px, 100% - 3rem);
+  }
+
+  .app-shell {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .hero,
+  .stats-grid,
+  .controls-panel,
+  .matches-panel {
+    grid-column: 1 / -1;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

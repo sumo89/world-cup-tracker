@@ -374,29 +374,36 @@ function App() {
                           <span>{user}</span>
                           <div className="pick-buttons">
                             {(['home', 'draw', 'away'] as PredictionChoice[]).map(
-                              (choice) => (
-                                <button
-                                  key={choice}
-                                  className={
-                                    currentPick === choice
-                                      ? `pick active ${
-                                          outcome && currentPick === outcome
-                                            ? 'correct'
-                                            : ''
-                                        }`
-                                      : 'pick'
-                                  }
-                                  onClick={() =>
-                                    setPrediction(match.fixtureId, user, choice)
-                                  }
-                                >
-                                  {choice === 'home'
-                                    ? 'H'
+                              (choice) => {
+                                const label =
+                                  choice === 'home'
+                                    ? match.homeTeam.name
                                     : choice === 'away'
-                                      ? 'A'
-                                      : 'D'}
-                                </button>
-                              ),
+                                      ? match.awayTeam.name
+                                      : 'Draw'
+                                return (
+                                  <button
+                                    key={choice}
+                                    className={
+                                      currentPick === choice
+                                        ? `pick active ${
+                                            outcome && currentPick === outcome
+                                              ? 'correct'
+                                              : ''
+                                          }`
+                                        : 'pick'
+                                    }
+                                    onClick={() =>
+                                      setPrediction(match.fixtureId, user, choice)
+                                    }
+                                    title={label}
+                                  >
+                                    {label.length > 12
+                                      ? label.substring(0, 12) + '…'
+                                      : label}
+                                  </button>
+                                )
+                              },
                             )}
                           </div>
                           <span className={isCorrect ? 'pick-state ok' : 'pick-state'}>

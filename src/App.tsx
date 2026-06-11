@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
+import { supabase } from './supabase'
 
 type PredictionChoice = 'home' | 'draw' | 'away'
 type MatchFilter = 'all' | 'upcoming' | 'completed'
@@ -29,6 +30,8 @@ type FixtureRecord = {
 }
 
 type PredictionsByFixture = Record<string, Record<string, PredictionChoice>>
+
+
 
 const USERS_STORAGE_KEY = 'wc26.users'
 const PREDICTIONS_STORAGE_KEY = 'wc26.predictions'
@@ -78,6 +81,7 @@ function App() {
   const [matches, setMatches] = useState<FixtureRecord[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [syncingToDb, setSyncingToDb] = useState(false)
   const [users, setUsers] = useState<string[]>(() =>
     safeJsonParse<string[]>(localStorage.getItem(USERS_STORAGE_KEY), []),
   )
@@ -93,11 +97,105 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users))
+    if (!supabase || users.length === 0) return
+
+    setSyncingToDb(true)
+    const syncUsers = async () => {
+      try {
+        const { data: existing } = await supabase!.from('users').select('name')
+        const existingNames = new Set((existing || []).map((u: any) => u.name))
+        const toInsert = users.filter((name) => !existingNames.has(name))
+
+        if (toInsert.length > 0) {
+          await supabase!.from('users').insert(toInsert.map((name) => ({ name })))
+        }
+      } catch (err) {
+        console.error('Failed to sync users to Supabase:', err)
+      } finally {
+        setSyncingToDb(false)
+      }
+    }
+    void syncUsers()
   }, [users])
 
   useEffect(() => {
     localStorage.setItem(PREDICTIONS_STORAGE_KEY, JSON.stringify(predictions))
+    if (!supabase || Object.keys(predictions).length === 0) return
+
+    setSyncingToDb(true)
+    const syncPredictions = async () => {
+      try {
+        for (const [fixtureId, picks] of Object.entries(predictions)) {
+          for (const [userName, choice] of Object.entries(picks)) {
+            const { data: user } = await supabase!
+              .from('users')
+              .select('id')
+              .eq('name', userName)
+              .single()
+
+            if (!user) continue
+
+            const { data: existing } = await supabase!
+              .from('predictions')
+              .select('id')
+              .eq('user_id', user.id)
+              .eq('fixture_id', Number(fixtureId))
+              .single()
+
+            if (existing) {
+              await supabase!
+                .from('predictions')
+                .update({ choice })
+                .eq('id', existing.id)
+            } else {
+              await supabase!.from('predictions').insert({
+                user_id: user.id,
+                fixture_id: Number(fixtureId),
+                choice,
+              })
+            }
+          }
+        }
+      } catch (err) {
+        console.error('Failed to sync predictions to Supabase:', err)
+      } finally {
+        setSyncingToDb(false)
+      }
+    }
+    void syncPredictions()
   }, [predictions])
+
+  useEffect(() => {
+    const loadFromSupabase = async () => {
+      if (!supabase) return
+
+      try {
+        const [{ data: dbUsers }, { data: dbPredictions }] = await Promise.all([
+          supabase.from('users').select('*'),
+          supabase.from('predictions').select('*, users(name)'),
+        ])
+
+        if (dbUsers && dbUsers.length > 0) {
+          setUsers(dbUsers.map((u: any) => u.name))
+        }
+
+        if (dbPredictions && dbPredictions.length > 0) {
+          const preds: PredictionsByFixture = {}
+          for (const pred of dbPredictions) {
+            const fId = String(pred.fixture_id)
+            const userName = (pred.users as any)?.name || pred.user_id
+            if (!preds[fId]) preds[fId] = {}
+            preds[fId][userName] = pred.choice
+          }
+          setPredictions(preds)
+        }
+      } catch (err) {
+        console.warn('Could not load data from Supabase:', err)
+      }
+    }
+
+    void loadFromSupabase()
+  }, [])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -185,16 +283,45 @@ function App() {
     [matches],
   )
 
-  const addUser = () => {
+  const addUser = async () => {
     const candidate = newUser.trim()
     if (!candidate || users.includes(candidate)) {
       return
+    }
+    if (supabase) {
+      setSyncingToDb(true)
+      try {
+        await supabase.from('users').insert({ name: candidate })
+      } catch (err) {
+        console.error('Failed to add user to Supabase:', err)
+      } finally {
+        setSyncingToDb(false)
+      }
     }
     setUsers((prev) => [...prev, candidate])
     setNewUser('')
   }
 
-  const removeUser = (user: string) => {
+  const removeUser = async (user: string) => {
+    if (supabase) {
+      setSyncingToDb(true)
+      try {
+        const { data: userData } = await supabase
+          .from('users')
+          .select('id')
+          .eq('name', user)
+          .single()
+
+        if (userData) {
+          await supabase.from('predictions').delete().eq('user_id', userData.id)
+          await supabase.from('users').delete().eq('id', userData.id)
+        }
+      } catch (err) {
+        console.error('Failed to remove user from Supabase:', err)
+      } finally {
+        setSyncingToDb(false)
+      }
+    }
     setUsers((prev) => prev.filter((u) => u !== user))
     setPredictions((prev) => {
       const next: PredictionsByFixture = {}
@@ -226,9 +353,10 @@ function App() {
         <p className="hero-kicker">2026 World Cup Prediction Board</p>
         <h1>Track Every Match. Beat Every Friend.</h1>
         <p>
-          Live schedule and results from API-Football, private predictions stored
-          locally per user, and an automatic leaderboard.
+          Live schedule and results from worldcup26.ir, predictions backed by cloud
+          database, and an automatic leaderboard.
         </p>
+        {syncingToDb && <p className="syncing-indicator">Syncing to database...</p>}
       </header>
 
       <section className="stats-grid">

@@ -8,10 +8,10 @@ A GitHub Pages-ready web app to:
 
 ## Security model
 
-Your API key is not used by browser code.
+No API key is used by browser code.
 
 The frontend reads static JSON from `public/data/fixtures.json`.
-A GitHub Actions workflow fetches live data from API-Football and commits updated JSON using a repository secret.
+A GitHub Actions workflow fetches live data from worldcup26.ir and commits updated JSON.
 
 ## Tech stack
 
@@ -36,16 +36,14 @@ npm run dev
 3. Optional: refresh fixture JSON locally:
 
 ```bash
-API_FOOTBALL_KEY=your_key_here npm run sync:data
+npm run sync:data
 ```
 
 ## GitHub setup
 
 1. Push this project to GitHub (default branch `main`).
-2. In repo settings, add secret:
-   - `API_FOOTBALL_KEY`: your API-Football key
-3. Enable GitHub Pages with source: GitHub Actions.
-4. Run workflow `Update World Cup Fixtures Data` once manually to populate data.
+2. Enable GitHub Pages with source: GitHub Actions.
+3. Run workflow `Update World Cup Fixtures Data` once manually to populate data.
 
 After that:
 - `update-fixtures-data.yml` refreshes data every 30 minutes.
@@ -61,6 +59,7 @@ After that:
 ## API scope used
 
 Current implementation uses:
-- `GET /fixtures?league=1&season=2026&page=N`
+- `GET https://worldcup26.ir/get/games`
+- `GET https://worldcup26.ir/get/stadiums`
 
 You can extend this later with rounds, standings, or player stats endpoints.

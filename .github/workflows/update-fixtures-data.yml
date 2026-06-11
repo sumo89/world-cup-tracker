@@ -24,9 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch API-Football fixtures
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      - name: Fetch worldcup26 fixtures
         run: npm run sync:data
 
       - name: Commit updated fixture data

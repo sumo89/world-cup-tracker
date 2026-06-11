@@ -1,84 +1,144 @@
-const API_BASE = 'https://v3.football.api-sports.io'
-const LEAGUE = 1
-const SEASON = 2026
+const API_BASE = 'https://worldcup26.ir'
 
-const apiKey = process.env.API_FOOTBALL_KEY
-if (!apiKey) {
-  console.error('Missing API_FOOTBALL_KEY environment variable.')
-  process.exit(1)
-}
-
-async function apiGet(path, params = {}) {
+async function apiGet(path) {
   const url = new URL(`${API_BASE}${path}`)
-  for (const [key, value] of Object.entries(params)) {
-    url.searchParams.set(key, String(value))
+
+  try {
+    const response = await fetch(url)
+    if (!response.ok) {
+      throw new Error(`API error ${response.status} for ${url.pathname}`)
+    }
+    return await response.json()
+  } catch (error) {
+    const certError =
+      error instanceof Error &&
+      String(error.cause?.code || '').includes('SELF_SIGNED_CERT_IN_CHAIN')
+
+    if (!certError) {
+      throw error
+    }
+
+    const { execFileSync } = await import('node:child_process')
+    const stdout = execFileSync('curl', ['--silent', '--show-error', '--insecure', url.href], {
+      encoding: 'utf8',
+    })
+
+    return JSON.parse(stdout)
   }
-
-  const response = await fetch(url, {
-    headers: {
-      'x-apisports-key': apiKey,
-    },
-  })
-
-  if (!response.ok) {
-    throw new Error(`API error ${response.status} for ${url.pathname}`)
-  }
-
-  const data = await response.json()
-  if (data.errors && Object.keys(data.errors).length > 0) {
-    throw new Error(`API returned errors: ${JSON.stringify(data.errors)}`)
-  }
-
-  return data
 }
 
-function mapFixture(item) {
+function parseLocalDate(value) {
+  if (!value || typeof value !== 'string') {
+    return null
+  }
+  const [datePart, timePart] = value.split(' ')
+  if (!datePart || !timePart) {
+    return null
+  }
+  const [month, day, year] = datePart.split('/').map(Number)
+  const [hour, minute] = timePart.split(':').map(Number)
+  if ([month, day, year, hour, minute].some((v) => Number.isNaN(v))) {
+    return null
+  }
+
+  return new Date(Date.UTC(year, month - 1, day, hour, minute)).toISOString()
+}
+
+function toNumberOrNull(value) {
+  if (value == null) {
+    return null
+  }
+  const num = Number(value)
+  return Number.isFinite(num) ? num : null
+}
+
+function toStatus(game) {
+  const finished = String(game.finished || '').toUpperCase() === 'TRUE'
+  if (finished) {
+    return {
+      short: 'FT',
+      long: 'Match Finished',
+    }
+  }
+
+  const elapsed = String(game.time_elapsed || '').toLowerCase()
+  if (
+    elapsed &&
+    elapsed !== 'notstarted' &&
+    elapsed !== 'scheduled' &&
+    elapsed !== '0'
+  ) {
+    return {
+      short: 'LIVE',
+      long: `Live (${game.time_elapsed})`,
+    }
+  }
+
   return {
-    fixtureId: item.fixture.id,
-    date: item.fixture.date,
-    round: item.league.round || '',
-    statusShort: item.fixture.status.short,
-    statusLong: item.fixture.status.long,
-    venueName: item.fixture.venue?.name ?? null,
-    venueCity: item.fixture.venue?.city ?? null,
+    short: 'NS',
+    long: 'Not Started',
+  }
+}
+
+function toRound(game) {
+  if (game.type === 'group') {
+    return `Group ${game.group} - ${game.matchday}`
+  }
+
+  const map = {
+    r32: 'Round of 32',
+    r16: 'Round of 16',
+    qf: 'Quarter-finals',
+    sf: 'Semi-finals',
+    third: 'Third Place Play-off',
+    final: 'Final',
+  }
+
+  return map[game.type] || game.group || game.type || 'Knockout Stage'
+}
+
+function mapFixture(game, stadiumById) {
+  const status = toStatus(game)
+  const stadium = stadiumById.get(String(game.stadium_id))
+  const homeName = game.home_team_name_en || game.home_team_label || 'TBD'
+  const awayName = game.away_team_name_en || game.away_team_label || 'TBD'
+
+  return {
+    fixtureId: Number(game.id),
+    date: parseLocalDate(game.local_date) ?? new Date().toISOString(),
+    round: toRound(game),
+    statusShort: status.short,
+    statusLong: status.long,
+    venueName: stadium?.name_en ?? stadium?.fifa_name ?? null,
+    venueCity: stadium?.city_en ?? null,
     homeTeam: {
-      id: item.teams.home.id,
-      name: item.teams.home.name,
-      logo: item.teams.home.logo ?? null,
+      id: toNumberOrNull(game.home_team_id) ?? 0,
+      name: homeName,
+      logo: null,
     },
     awayTeam: {
-      id: item.teams.away.id,
-      name: item.teams.away.name,
-      logo: item.teams.away.logo ?? null,
+      id: toNumberOrNull(game.away_team_id) ?? 0,
+      name: awayName,
+      logo: null,
     },
     goals: {
-      home: item.goals.home,
-      away: item.goals.away,
+      home: toNumberOrNull(game.home_score),
+      away: toNumberOrNull(game.away_score),
     },
   }
 }
 
 async function getAllFixtures() {
-  const fixtures = []
-  let page = 1
+  const [gamesResponse, stadiumsResponse] = await Promise.all([
+    apiGet('/get/games'),
+    apiGet('/get/stadiums'),
+  ])
 
-  while (true) {
-    const data = await apiGet('/fixtures', {
-      league: LEAGUE,
-      season: SEASON,
-      page,
-    })
+  const games = gamesResponse.games || []
+  const stadiums = stadiumsResponse.stadiums || []
+  const stadiumById = new Map(stadiums.map((stadium) => [String(stadium.id), stadium]))
 
-    const responseItems = data.response || []
-    fixtures.push(...responseItems.map(mapFixture))
-
-    const paging = data.paging || {}
-    if (!paging.total || page >= paging.total) {
-      break
-    }
-    page += 1
-  }
-
+  const fixtures = games.map((game) => mapFixture(game, stadiumById))
   fixtures.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
   return fixtures
 }
@@ -98,8 +158,7 @@ async function main() {
       `${JSON.stringify(
         {
           updatedAtUtc: new Date().toISOString(),
-          league: LEAGUE,
-          season: SEASON,
+          source: 'worldcup26.ir',
           fixtureCount: fixtures.length,
         },
         null,

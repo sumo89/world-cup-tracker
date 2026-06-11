@@ -1,1 +1,2394 @@
-[]
+[
+  {
+    "fixtureId": 1,
+    "date": "2026-06-11T13:00:00.000Z",
+    "round": "Group A - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 1,
+      "name": "Mexico",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 2,
+      "name": "South Africa",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 2,
+    "date": "2026-06-11T20:00:00.000Z",
+    "round": "Group A - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Akron",
+    "venueCity": "Guadalajara (Zapopan)",
+    "homeTeam": {
+      "id": 3,
+      "name": "South Korea",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 4,
+      "name": "Czech Republic",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 3,
+    "date": "2026-06-12T15:00:00.000Z",
+    "round": "Group B - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 5,
+      "name": "Canada",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 6,
+      "name": "Bosnia and Herzegovina",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 4,
+    "date": "2026-06-12T18:00:00.000Z",
+    "round": "Group D - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 13,
+      "name": "United States",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 14,
+      "name": "Paraguay",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 8,
+    "date": "2026-06-13T12:00:00.000Z",
+    "round": "Group B - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 7,
+      "name": "Qatar",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 8,
+      "name": "Switzerland",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 7,
+    "date": "2026-06-13T18:00:00.000Z",
+    "round": "Group C - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 9,
+      "name": "Brazil",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 10,
+      "name": "Morocco",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 5,
+    "date": "2026-06-13T21:00:00.000Z",
+    "round": "Group C - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 11,
+      "name": "Haiti",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 12,
+      "name": "Scotland",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 6,
+    "date": "2026-06-13T21:00:00.000Z",
+    "round": "Group D - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 15,
+      "name": "Australia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 16,
+      "name": "Turkey",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 10,
+    "date": "2026-06-14T12:00:00.000Z",
+    "round": "Group E - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 17,
+      "name": "Germany",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 18,
+      "name": "Curaçao",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 11,
+    "date": "2026-06-14T15:00:00.000Z",
+    "round": "Group F - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 21,
+      "name": "Netherlands",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 22,
+      "name": "Japan",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 9,
+    "date": "2026-06-14T19:00:00.000Z",
+    "round": "Group E - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 19,
+      "name": "Ivory Coast",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 20,
+      "name": "Ecuador",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 12,
+    "date": "2026-06-14T20:00:00.000Z",
+    "round": "Group F - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio BBVA",
+    "venueCity": "Monterrey (Guadalupe)",
+    "homeTeam": {
+      "id": 23,
+      "name": "Sweden",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 24,
+      "name": "Tunisia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 14,
+    "date": "2026-06-15T12:00:00.000Z",
+    "round": "Group H - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 29,
+      "name": "Spain",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 30,
+      "name": "Cape Verde",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 15,
+    "date": "2026-06-15T12:00:00.000Z",
+    "round": "Group G - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 25,
+      "name": "Belgium",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 26,
+      "name": "Egypt",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 13,
+    "date": "2026-06-15T18:00:00.000Z",
+    "round": "Group G - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 27,
+      "name": "Iran",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 28,
+      "name": "New Zealand",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 16,
+    "date": "2026-06-15T18:00:00.000Z",
+    "round": "Group H - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 31,
+      "name": "Saudi Arabia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 32,
+      "name": "Uruguay",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 17,
+    "date": "2026-06-16T15:00:00.000Z",
+    "round": "Group I - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 33,
+      "name": "France",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 34,
+      "name": "Senegal",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 18,
+    "date": "2026-06-16T18:00:00.000Z",
+    "round": "Group I - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 35,
+      "name": "Iraq",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 36,
+      "name": "Norway",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 19,
+    "date": "2026-06-16T20:00:00.000Z",
+    "round": "Group J - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 37,
+      "name": "Argentina",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 38,
+      "name": "Algeria",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 20,
+    "date": "2026-06-16T21:00:00.000Z",
+    "round": "Group J - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 39,
+      "name": "Austria",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 40,
+      "name": "Jordan",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 21,
+    "date": "2026-06-17T12:00:00.000Z",
+    "round": "Group K - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 41,
+      "name": "Portugal",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 42,
+      "name": "Democratic Republic of the Congo",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 22,
+    "date": "2026-06-17T15:00:00.000Z",
+    "round": "Group L - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 45,
+      "name": "England",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 46,
+      "name": "Croatia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 24,
+    "date": "2026-06-17T19:00:00.000Z",
+    "round": "Group L - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 47,
+      "name": "Ghana",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 48,
+      "name": "Panama",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 23,
+    "date": "2026-06-17T20:00:00.000Z",
+    "round": "Group K - 1",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 43,
+      "name": "Uzbekistan",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 44,
+      "name": "Colombia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 26,
+    "date": "2026-06-18T12:00:00.000Z",
+    "round": "Group B - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 8,
+      "name": "Switzerland",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 6,
+      "name": "Bosnia and Herzegovina",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 28,
+    "date": "2026-06-18T12:00:00.000Z",
+    "round": "Group A - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 4,
+      "name": "Czech Republic",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 2,
+      "name": "South Africa",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 27,
+    "date": "2026-06-18T15:00:00.000Z",
+    "round": "Group B - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 5,
+      "name": "Canada",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 7,
+      "name": "Qatar",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 25,
+    "date": "2026-06-18T19:00:00.000Z",
+    "round": "Group A - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Akron",
+    "venueCity": "Guadalajara (Zapopan)",
+    "homeTeam": {
+      "id": 1,
+      "name": "Mexico",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 3,
+      "name": "South Korea",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 31,
+    "date": "2026-06-19T12:00:00.000Z",
+    "round": "Group D - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 13,
+      "name": "United States",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 15,
+      "name": "Australia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 30,
+    "date": "2026-06-19T18:00:00.000Z",
+    "round": "Group C - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 12,
+      "name": "Scotland",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 10,
+      "name": "Morocco",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 32,
+    "date": "2026-06-19T20:00:00.000Z",
+    "round": "Group D - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 16,
+      "name": "Turkey",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 14,
+      "name": "Paraguay",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 29,
+    "date": "2026-06-19T21:00:00.000Z",
+    "round": "Group C - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 9,
+      "name": "Brazil",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 11,
+      "name": "Haiti",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 35,
+    "date": "2026-06-20T12:00:00.000Z",
+    "round": "Group F - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 21,
+      "name": "Netherlands",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 23,
+      "name": "Sweden",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 33,
+    "date": "2026-06-20T16:00:00.000Z",
+    "round": "Group E - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 17,
+      "name": "Germany",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 19,
+      "name": "Ivory Coast",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 34,
+    "date": "2026-06-20T19:00:00.000Z",
+    "round": "Group E - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 20,
+      "name": "Ecuador",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 18,
+      "name": "Curaçao",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 36,
+    "date": "2026-06-20T22:00:00.000Z",
+    "round": "Group F - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio BBVA",
+    "venueCity": "Monterrey (Guadalupe)",
+    "homeTeam": {
+      "id": 24,
+      "name": "Tunisia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 22,
+      "name": "Japan",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 37,
+    "date": "2026-06-21T12:00:00.000Z",
+    "round": "Group G - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 25,
+      "name": "Belgium",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 27,
+      "name": "Iran",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 39,
+    "date": "2026-06-21T12:00:00.000Z",
+    "round": "Group H - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 29,
+      "name": "Spain",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 31,
+      "name": "Saudi Arabia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 38,
+    "date": "2026-06-21T18:00:00.000Z",
+    "round": "Group G - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 28,
+      "name": "New Zealand",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 26,
+      "name": "Egypt",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 40,
+    "date": "2026-06-21T18:00:00.000Z",
+    "round": "Group H - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 32,
+      "name": "Uruguay",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 30,
+      "name": "Cape Verde",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 43,
+    "date": "2026-06-22T12:00:00.000Z",
+    "round": "Group J - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 37,
+      "name": "Argentina",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 39,
+      "name": "Austria",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 41,
+    "date": "2026-06-22T17:00:00.000Z",
+    "round": "Group I - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 33,
+      "name": "France",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 35,
+      "name": "Iraq",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 42,
+    "date": "2026-06-22T20:00:00.000Z",
+    "round": "Group I - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 36,
+      "name": "Norway",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 34,
+      "name": "Senegal",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 44,
+    "date": "2026-06-22T20:00:00.000Z",
+    "round": "Group J - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 40,
+      "name": "Jordan",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 38,
+      "name": "Algeria",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 45,
+    "date": "2026-06-23T12:00:00.000Z",
+    "round": "Group K - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 41,
+      "name": "Portugal",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 43,
+      "name": "Uzbekistan",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 48,
+    "date": "2026-06-23T16:00:00.000Z",
+    "round": "Group L - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 45,
+      "name": "England",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 47,
+      "name": "Ghana",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 46,
+    "date": "2026-06-23T19:00:00.000Z",
+    "round": "Group L - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 48,
+      "name": "Panama",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 46,
+      "name": "Croatia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 47,
+    "date": "2026-06-23T20:00:00.000Z",
+    "round": "Group K - 2",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Akron",
+    "venueCity": "Guadalajara (Zapopan)",
+    "homeTeam": {
+      "id": 44,
+      "name": "Colombia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 42,
+      "name": "Democratic Republic of the Congo",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 53,
+    "date": "2026-06-24T12:00:00.000Z",
+    "round": "Group B - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 6,
+      "name": "Bosnia and Herzegovina",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 7,
+      "name": "Qatar",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 54,
+    "date": "2026-06-24T12:00:00.000Z",
+    "round": "Group B - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 8,
+      "name": "Switzerland",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 5,
+      "name": "Canada",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 49,
+    "date": "2026-06-24T18:00:00.000Z",
+    "round": "Group C - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 12,
+      "name": "Scotland",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 9,
+      "name": "Brazil",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 50,
+    "date": "2026-06-24T18:00:00.000Z",
+    "round": "Group C - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 10,
+      "name": "Morocco",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 11,
+      "name": "Haiti",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 51,
+    "date": "2026-06-24T19:00:00.000Z",
+    "round": "Group A - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio BBVA",
+    "venueCity": "Monterrey (Guadalupe)",
+    "homeTeam": {
+      "id": 2,
+      "name": "South Africa",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 3,
+      "name": "South Korea",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 52,
+    "date": "2026-06-24T19:00:00.000Z",
+    "round": "Group A - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 4,
+      "name": "Czech Republic",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 1,
+      "name": "Mexico",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 55,
+    "date": "2026-06-25T16:00:00.000Z",
+    "round": "Group E - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 18,
+      "name": "Curaçao",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 19,
+      "name": "Ivory Coast",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 56,
+    "date": "2026-06-25T16:00:00.000Z",
+    "round": "Group E - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 20,
+      "name": "Ecuador",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 17,
+      "name": "Germany",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 59,
+    "date": "2026-06-25T18:00:00.000Z",
+    "round": "Group F - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 22,
+      "name": "Japan",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 23,
+      "name": "Sweden",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 60,
+    "date": "2026-06-25T18:00:00.000Z",
+    "round": "Group F - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 24,
+      "name": "Tunisia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 21,
+      "name": "Netherlands",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 57,
+    "date": "2026-06-25T19:00:00.000Z",
+    "round": "Group D - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 14,
+      "name": "Paraguay",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 15,
+      "name": "Australia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 58,
+    "date": "2026-06-25T19:00:00.000Z",
+    "round": "Group D - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 16,
+      "name": "Turkey",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 13,
+      "name": "United States",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 61,
+    "date": "2026-06-26T15:00:00.000Z",
+    "round": "Group I - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 34,
+      "name": "Senegal",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 35,
+      "name": "Iraq",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 62,
+    "date": "2026-06-26T15:00:00.000Z",
+    "round": "Group I - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 36,
+      "name": "Norway",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 33,
+      "name": "France",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 66,
+    "date": "2026-06-26T18:00:00.000Z",
+    "round": "Group H - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Akron",
+    "venueCity": "Guadalajara (Zapopan)",
+    "homeTeam": {
+      "id": 32,
+      "name": "Uruguay",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 29,
+      "name": "Spain",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 65,
+    "date": "2026-06-26T19:00:00.000Z",
+    "round": "Group H - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 30,
+      "name": "Cape Verde",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 31,
+      "name": "Saudi Arabia",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 63,
+    "date": "2026-06-26T20:00:00.000Z",
+    "round": "Group G - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 26,
+      "name": "Egypt",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 27,
+      "name": "Iran",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 64,
+    "date": "2026-06-26T20:00:00.000Z",
+    "round": "Group G - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 28,
+      "name": "New Zealand",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 25,
+      "name": "Belgium",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 67,
+    "date": "2026-06-27T17:00:00.000Z",
+    "round": "Group L - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 48,
+      "name": "Panama",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 45,
+      "name": "England",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 68,
+    "date": "2026-06-27T17:00:00.000Z",
+    "round": "Group L - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 46,
+      "name": "Croatia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 47,
+      "name": "Ghana",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 71,
+    "date": "2026-06-27T19:30:00.000Z",
+    "round": "Group K - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 44,
+      "name": "Colombia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 41,
+      "name": "Portugal",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 72,
+    "date": "2026-06-27T19:30:00.000Z",
+    "round": "Group K - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 42,
+      "name": "Democratic Republic of the Congo",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 43,
+      "name": "Uzbekistan",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 69,
+    "date": "2026-06-27T21:00:00.000Z",
+    "round": "Group J - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 38,
+      "name": "Algeria",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 39,
+      "name": "Austria",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 70,
+    "date": "2026-06-27T21:00:00.000Z",
+    "round": "Group J - 3",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 40,
+      "name": "Jordan",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 37,
+      "name": "Argentina",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 73,
+    "date": "2026-06-28T12:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Runner-up Group A",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group B",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 76,
+    "date": "2026-06-29T12:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group C",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group F",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 74,
+    "date": "2026-06-29T16:30:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group E",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group A/B/C/D/F",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 75,
+    "date": "2026-06-29T19:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio BBVA",
+    "venueCity": "Monterrey (Guadalupe)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group F",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group C",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 78,
+    "date": "2026-06-30T12:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Runner-up Group E",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group I",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 77,
+    "date": "2026-06-30T17:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group I",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group C/D/F/G/H",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 79,
+    "date": "2026-06-30T19:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group A",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group C/E/F/H/I",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 80,
+    "date": "2026-07-01T12:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group L",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group E/H/I/J/K",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 82,
+    "date": "2026-07-01T13:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group G",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group A/E/H/I/J",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 81,
+    "date": "2026-07-01T17:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Levi's Stadium",
+    "venueCity": "San Francisco Bay Area (Santa Clara)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group D",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group B/E/F/I/J",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 84,
+    "date": "2026-07-02T12:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group H",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group J",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 83,
+    "date": "2026-07-02T19:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BMO Field",
+    "venueCity": "Toronto",
+    "homeTeam": {
+      "id": 0,
+      "name": "Runner-up Group K",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group L",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 85,
+    "date": "2026-07-02T20:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group B",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group E/F/G/I/J",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 88,
+    "date": "2026-07-03T13:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Runner-up Group D",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group G",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 86,
+    "date": "2026-07-03T18:00:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group J",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Runner-up Group H",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 87,
+    "date": "2026-07-03T20:30:00.000Z",
+    "round": "Round of 32",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Group K",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "3rd Group D/E/I/J/L",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 90,
+    "date": "2026-07-04T12:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "NRG Stadium",
+    "venueCity": "Houston",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 73",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 75",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 89,
+    "date": "2026-07-04T17:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lincoln Financial Field",
+    "venueCity": "Philadelphia",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 74",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 77",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 91,
+    "date": "2026-07-05T16:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 76",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 78",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 92,
+    "date": "2026-07-05T18:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 79",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 80",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 93,
+    "date": "2026-07-06T14:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 83",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 84",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 94,
+    "date": "2026-07-06T17:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Lumen Field",
+    "venueCity": "Seattle",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 81",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 82",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 95,
+    "date": "2026-07-07T12:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 86",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 88",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 96,
+    "date": "2026-07-07T13:00:00.000Z",
+    "round": "Round of 16",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 85",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 87",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 97,
+    "date": "2026-07-09T16:00:00.000Z",
+    "round": "Quarter-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Gillette Stadium",
+    "venueCity": "Boston (Foxborough)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 89",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 90",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 98,
+    "date": "2026-07-10T12:00:00.000Z",
+    "round": "Quarter-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 93",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 94",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 99,
+    "date": "2026-07-11T17:00:00.000Z",
+    "round": "Quarter-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 91",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 92",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 100,
+    "date": "2026-07-11T20:00:00.000Z",
+    "round": "Quarter-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "GEHA Field at Arrowhead Stadium",
+    "venueCity": "Kansas City",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 95",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 96",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 101,
+    "date": "2026-07-14T14:00:00.000Z",
+    "round": "Semi-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 97",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 98",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 102,
+    "date": "2026-07-15T15:00:00.000Z",
+    "round": "Semi-finals",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 99",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 100",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 103,
+    "date": "2026-07-18T17:00:00.000Z",
+    "round": "Third Place Play-off",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Loser Match 101",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Loser Match 102",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "fixtureId": 104,
+    "date": "2026-07-19T15:00:00.000Z",
+    "round": "Final",
+    "statusShort": "NS",
+    "statusLong": "Not Started",
+    "venueName": "MetLife Stadium",
+    "venueCity": "New York/New Jersey (East Rutherford)",
+    "homeTeam": {
+      "id": 0,
+      "name": "Winner Match 101",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 0,
+      "name": "Winner Match 102",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    }
+  }
+]

@@ -11,5 +11,5 @@
 Project notes:
 - Vite React + TypeScript app for 2026 World Cup matches and predictions.
 - Fixtures are generated into public/data via scripts/fetch-world-cup-data.mjs.
-- API key is never used in client code; use GitHub secret API_FOOTBALL_KEY.
+- Data source is https://worldcup26.ir via /get/games and /get/stadiums.
 - Deploys to GitHub Pages via .github/workflows/deploy-pages.yml.

@@ -82,6 +82,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [syncingToDb, setSyncingToDb] = useState(false)
+  const [userIdByName, setUserIdByName] = useState<Record<string, string>>({})
   const [users, setUsers] = useState<string[]>(() =>
     safeJsonParse<string[]>(localStorage.getItem(USERS_STORAGE_KEY), []),
   )
@@ -102,12 +103,25 @@ function App() {
     setSyncingToDb(true)
     const syncUsers = async () => {
       try {
-        const { data: existing } = await supabase!.from('users').select('name')
+        const { data: existing } = await supabase!
+          .from('users')
+          .select('id, name')
         const existingNames = new Set((existing || []).map((u: any) => u.name))
         const toInsert = users.filter((name) => !existingNames.has(name))
 
         if (toInsert.length > 0) {
           await supabase!.from('users').insert(toInsert.map((name) => ({ name })))
+        }
+
+        const { data: refreshedUsers } = await supabase!
+          .from('users')
+          .select('id, name')
+        if (refreshedUsers) {
+          const ids: Record<string, string> = {}
+          for (const user of refreshedUsers) {
+            ids[user.name] = user.id
+          }
+          setUserIdByName(ids)
         }
       } catch (err) {
         console.error('Failed to sync users to Supabase:', err)
@@ -120,49 +134,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(PREDICTIONS_STORAGE_KEY, JSON.stringify(predictions))
-    if (!supabase || Object.keys(predictions).length === 0) return
-
-    setSyncingToDb(true)
-    const syncPredictions = async () => {
-      try {
-        for (const [fixtureId, picks] of Object.entries(predictions)) {
-          for (const [userName, choice] of Object.entries(picks)) {
-            const { data: user } = await supabase!
-              .from('users')
-              .select('id')
-              .eq('name', userName)
-              .single()
-
-            if (!user) continue
-
-            const { data: existing } = await supabase!
-              .from('predictions')
-              .select('id')
-              .eq('user_id', user.id)
-              .eq('fixture_id', Number(fixtureId))
-              .single()
-
-            if (existing) {
-              await supabase!
-                .from('predictions')
-                .update({ choice })
-                .eq('id', existing.id)
-            } else {
-              await supabase!.from('predictions').insert({
-                user_id: user.id,
-                fixture_id: Number(fixtureId),
-                choice,
-              })
-            }
-          }
-        }
-      } catch (err) {
-        console.error('Failed to sync predictions to Supabase:', err)
-      } finally {
-        setSyncingToDb(false)
-      }
-    }
-    void syncPredictions()
   }, [predictions])
 
   useEffect(() => {
@@ -177,6 +148,11 @@ function App() {
 
         if (dbUsers && dbUsers.length > 0) {
           setUsers(dbUsers.map((u: any) => u.name))
+          const ids: Record<string, string> = {}
+          for (const user of dbUsers) {
+            ids[user.name] = user.id
+          }
+          setUserIdByName(ids)
         }
 
         if (dbPredictions && dbPredictions.length > 0) {
@@ -291,7 +267,14 @@ function App() {
     if (supabase) {
       setSyncingToDb(true)
       try {
-        await supabase.from('users').insert({ name: candidate })
+        const { data } = await supabase
+          .from('users')
+          .insert({ name: candidate })
+          .select('id, name')
+          .single()
+        if (data) {
+          setUserIdByName((prev) => ({ ...prev, [data.name]: data.id }))
+        }
       } catch (err) {
         console.error('Failed to add user to Supabase:', err)
       } finally {
@@ -306,15 +289,10 @@ function App() {
     if (supabase) {
       setSyncingToDb(true)
       try {
-        const { data: userData } = await supabase
-          .from('users')
-          .select('id')
-          .eq('name', user)
-          .single()
-
-        if (userData) {
-          await supabase.from('predictions').delete().eq('user_id', userData.id)
-          await supabase.from('users').delete().eq('id', userData.id)
+        const userId = userIdByName[user]
+        if (userId) {
+          await supabase.from('predictions').delete().eq('user_id', userId)
+          await supabase.from('users').delete().eq('id', userId)
         }
       } catch (err) {
         console.error('Failed to remove user from Supabase:', err)
@@ -322,6 +300,11 @@ function App() {
         setSyncingToDb(false)
       }
     }
+    setUserIdByName((prev) => {
+      const next = { ...prev }
+      delete next[user]
+      return next
+    })
     setUsers((prev) => prev.filter((u) => u !== user))
     setPredictions((prev) => {
       const next: PredictionsByFixture = {}
@@ -338,6 +321,31 @@ function App() {
     user: string,
     choice: PredictionChoice,
   ) => {
+    if (supabase) {
+      const db = supabase
+      const userId = userIdByName[user]
+      if (userId) {
+        setSyncingToDb(true)
+        const syncPrediction = async () => {
+          try {
+            await db.from('predictions').upsert(
+              {
+                user_id: userId,
+                fixture_id: fixtureId,
+                choice,
+              },
+              { onConflict: 'user_id,fixture_id' },
+            )
+          } catch (err) {
+            console.error('Failed to sync prediction to Supabase:', err)
+          } finally {
+            setSyncingToDb(false)
+          }
+        }
+        void syncPrediction()
+      }
+    }
+
     setPredictions((prev) => ({
       ...prev,
       [fixtureId]: {

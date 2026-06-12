@@ -49,8 +49,8 @@
     "fixtureId": 3,
     "date": "2026-06-12T15:00:00.000Z",
     "round": "Group B - 1",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -64,7 +64,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 1,
       "away": 1
     }
   },

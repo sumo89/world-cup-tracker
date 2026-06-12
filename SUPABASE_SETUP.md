@@ -27,6 +27,28 @@ create table predictions (
 );
 ```
 
+### `fixtures` table
+```sql
+create table fixtures (
+  fixture_id integer primary key,
+  date timestamp with time zone not null,
+  round text not null,
+  status_short text not null,
+  status_long text not null,
+  venue_name text,
+  venue_city text,
+  home_team_id integer not null,
+  home_team_name text not null,
+  away_team_id integer not null,
+  away_team_name text not null,
+  home_score integer,
+  away_score integer,
+  updated_at timestamp with time zone default now()
+);
+```
+
+The app performs a one-time startup sync from `worldcup26.ir` and bulk-upserts the latest fixtures into this table.
+
 ## 2. Get Your Keys
 
 1. Go to your Supabase project settings

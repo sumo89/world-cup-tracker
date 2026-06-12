@@ -35,6 +35,41 @@ type PredictionsByFixture = Record<string, Record<string, PredictionChoice>>
 
 const USERS_STORAGE_KEY = 'wc26.users'
 const PREDICTIONS_STORAGE_KEY = 'wc26.predictions'
+const FIXTURES_SYNC_STORAGE_KEY = 'wc26.fixtures.synced'
+
+type WorldCupApiGame = {
+  id: string | number
+  local_date?: string
+  type?: string
+  group?: string
+  matchday?: string | number
+  stadium_id?: string | number
+  home_team_name_en?: string
+  home_team_label?: string
+  away_team_name_en?: string
+  away_team_label?: string
+  home_team_id?: string | number
+  away_team_id?: string | number
+  home_score?: string | number
+  away_score?: string | number
+  finished?: string
+  time_elapsed?: string
+}
+
+type WorldCupApiStadium = {
+  id: string | number
+  name_en?: string
+  fifa_name?: string
+  city_en?: string
+}
+
+type WorldCupGamesResponse = {
+  games?: WorldCupApiGame[]
+}
+
+type WorldCupStadiumsResponse = {
+  stadiums?: WorldCupApiStadium[]
+}
 
 function toDateLabel(utcDate: string) {
   return new Intl.DateTimeFormat('en-GB', {
@@ -77,6 +112,151 @@ function safeJsonParse<T>(value: string | null, fallback: T): T {
   }
 }
 
+function parseLocalDate(value: string | undefined) {
+  if (!value || typeof value !== 'string') {
+    return null
+  }
+  const [datePart, timePart] = value.split(' ')
+  if (!datePart || !timePart) {
+    return null
+  }
+  const [month, day, year] = datePart.split('/').map(Number)
+  const [hour, minute] = timePart.split(':').map(Number)
+  if ([month, day, year, hour, minute].some((entry) => Number.isNaN(entry))) {
+    return null
+  }
+
+  return new Date(Date.UTC(year, month - 1, day, hour, minute)).toISOString()
+}
+
+function toNumberOrNull(value: string | number | undefined) {
+  if (value == null) {
+    return null
+  }
+  const num = Number(value)
+  return Number.isFinite(num) ? num : null
+}
+
+function toStatus(game: WorldCupApiGame) {
+  const finished = String(game.finished || '').toUpperCase() === 'TRUE'
+  if (finished) {
+    return {
+      short: 'FT',
+      long: 'Match Finished',
+    }
+  }
+
+  const elapsed = String(game.time_elapsed || '').toLowerCase()
+  if (
+    elapsed &&
+    elapsed !== 'notstarted' &&
+    elapsed !== 'scheduled' &&
+    elapsed !== '0'
+  ) {
+    return {
+      short: 'LIVE',
+      long: `Live (${game.time_elapsed})`,
+    }
+  }
+
+  return {
+    short: 'NS',
+    long: 'Not Started',
+  }
+}
+
+function toRound(game: WorldCupApiGame) {
+  if (game.type === 'group') {
+    return `Group ${game.group} - ${game.matchday}`
+  }
+
+  const map: Record<string, string> = {
+    r32: 'Round of 32',
+    r16: 'Round of 16',
+    qf: 'Quarter-finals',
+    sf: 'Semi-finals',
+    third: 'Third Place Play-off',
+    final: 'Final',
+  }
+
+  return map[game.type || ''] || game.group || game.type || 'Knockout Stage'
+}
+
+function mapApiFixture(game: WorldCupApiGame, stadiumById: Map<string, WorldCupApiStadium>) {
+  const status = toStatus(game)
+  const stadium = stadiumById.get(String(game.stadium_id))
+  const homeName = game.home_team_name_en || game.home_team_label || 'TBD'
+  const awayName = game.away_team_name_en || game.away_team_label || 'TBD'
+
+  return {
+    fixture_id: Number(game.id),
+    date: parseLocalDate(game.local_date) ?? new Date().toISOString(),
+    round: toRound(game),
+    status_short: status.short,
+    status_long: status.long,
+    venue_name: stadium?.name_en ?? stadium?.fifa_name ?? null,
+    venue_city: stadium?.city_en ?? null,
+    home_team_id: toNumberOrNull(game.home_team_id) ?? 0,
+    home_team_name: homeName,
+    away_team_id: toNumberOrNull(game.away_team_id) ?? 0,
+    away_team_name: awayName,
+    home_score: toNumberOrNull(game.home_score),
+    away_score: toNumberOrNull(game.away_score),
+    updated_at: new Date().toISOString(),
+  }
+}
+
+function toFixtureRecord(fixture: ReturnType<typeof mapApiFixture>): FixtureRecord {
+  return {
+    fixtureId: fixture.fixture_id,
+    date: fixture.date,
+    round: fixture.round,
+    statusShort: fixture.status_short,
+    statusLong: fixture.status_long,
+    venueName: fixture.venue_name,
+    venueCity: fixture.venue_city,
+    homeTeam: {
+      id: fixture.home_team_id,
+      name: fixture.home_team_name,
+      logo: null,
+    },
+    awayTeam: {
+      id: fixture.away_team_id,
+      name: fixture.away_team_name,
+      logo: null,
+    },
+    goals: {
+      home: fixture.home_score,
+      away: fixture.away_score,
+    },
+  }
+}
+
+
+async function fetchLiveFixtures(signal?: AbortSignal) {
+  const [gamesResponse, stadiumsResponse] = await Promise.all([
+    fetch('https://worldcup26.ir/get/games', signal ? { signal } : undefined),
+    fetch('https://worldcup26.ir/get/stadiums', signal ? { signal } : undefined),
+  ])
+
+  if (!gamesResponse.ok || !stadiumsResponse.ok) {
+    throw new Error(
+      `Failed to load live fixtures: ${gamesResponse.status}/${stadiumsResponse.status}`,
+    )
+  }
+
+  const gamesData = (await gamesResponse.json()) as WorldCupGamesResponse
+  const stadiumsData = (await stadiumsResponse.json()) as WorldCupStadiumsResponse
+
+  const stadiumById = new Map(
+    (stadiumsData.stadiums || []).map((stadium) => [String(stadium.id), stadium]),
+  )
+  const liveFixtures = (gamesData.games || []).map((game) =>
+    mapApiFixture(game, stadiumById),
+  )
+
+  return liveFixtures.sort((a, b) => +new Date(a.date) - +new Date(b.date))
+}
 function App() {
   const [matches, setMatches] = useState<FixtureRecord[]>([])
   const [loading, setLoading] = useState(true)
@@ -137,63 +317,47 @@ function App() {
   }, [predictions])
 
   useEffect(() => {
-    const loadFromSupabase = async () => {
-      if (!supabase) return
-
-      try {
-        const [{ data: dbUsers }, { data: dbPredictions }] = await Promise.all([
-          supabase.from('users').select('*'),
-          supabase.from('predictions').select('*, users(name)'),
-        ])
-
-        if (dbUsers && dbUsers.length > 0) {
-          setUsers(dbUsers.map((u: any) => u.name))
-          const ids: Record<string, string> = {}
-          for (const user of dbUsers) {
-            ids[user.name] = user.id
-          }
-          setUserIdByName(ids)
-        }
-
-        if (dbPredictions && dbPredictions.length > 0) {
-          const preds: PredictionsByFixture = {}
-          for (const pred of dbPredictions) {
-            const fId = String(pred.fixture_id)
-            const userName = (pred.users as any)?.name || pred.user_id
-            if (!preds[fId]) preds[fId] = {}
-            preds[fId][userName] = pred.choice
-          }
-          setPredictions(preds)
-        }
-      } catch (err) {
-        console.warn('Could not load data from Supabase:', err)
-      }
-    }
-
-    void loadFromSupabase()
-  }, [])
-
-  useEffect(() => {
     const controller = new AbortController()
     const load = async () => {
       setLoading(true)
       setError(null)
       try {
-        const response = await fetch('./data/fixtures.json', {
-          signal: controller.signal,
-        })
-        if (!response.ok) {
-          throw new Error(`Failed to load fixtures: ${response.status}`)
+        const liveFixtures = await fetchLiveFixtures(controller.signal)
+        setMatches(liveFixtures.map(toFixtureRecord))
+
+        if (supabase) {
+          setSyncingToDb(true)
+          try {
+            await supabase.from('fixtures').upsert(liveFixtures, {
+              onConflict: 'fixture_id',
+            })
+            localStorage.setItem(FIXTURES_SYNC_STORAGE_KEY, 'done')
+          } catch (err) {
+            console.warn('Could not sync latest fixtures to Supabase:', err)
+          } finally {
+            setSyncingToDb(false)
+          }
         }
-        const data = (await response.json()) as FixtureRecord[]
-        setMatches(data.sort((a, b) => +new Date(a.date) - +new Date(b.date)))
       } catch (err) {
         if (!controller.signal.aborted) {
-          setError(
-            err instanceof Error
-              ? err.message
-              : 'Could not load fixture data from local JSON.',
-          )
+          try {
+            const response = await fetch('./data/fixtures.json', {
+              signal: controller.signal,
+            })
+            if (!response.ok) {
+              throw new Error(`Failed to load fixtures: ${response.status}`)
+            }
+            const data = (await response.json()) as FixtureRecord[]
+            setMatches(data.sort((a, b) => +new Date(a.date) - +new Date(b.date)))
+          } catch (fallbackError) {
+            setError(
+              fallbackError instanceof Error
+                ? fallbackError.message
+                : err instanceof Error
+                  ? err.message
+                  : 'Could not load fixture data.',
+            )
+          }
         }
       } finally {
         if (!controller.signal.aborted) {

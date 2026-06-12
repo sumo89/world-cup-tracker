@@ -290,6 +290,7 @@ function App() {
   const [selectedRound, setSelectedRound] = useState('all')
   const [filter, setFilter] = useState<MatchFilter>('all')
   const [activeTab, setActiveTab] = useState<StageTab>('group-stage')
+  const [userToRemove, setUserToRemove] = useState<string | null>(null)
 
   useEffect(() => {
     localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users))
@@ -471,7 +472,7 @@ function App() {
     setNewUser('')
   }
 
-  const removeUser = async (user: string) => {
+  const confirmRemoveUser = async (user: string) => {
     if (supabase) {
       setSyncingToDb(true)
       try {
@@ -587,7 +588,7 @@ function App() {
           {users.map((user) => (
             <div className="chip" key={user}>
               <span>{user}</span>
-              <button onClick={() => removeUser(user)} aria-label={`Remove ${user}`}>
+              <button onClick={() => setUserToRemove(user)} aria-label={`Remove ${user}`}>
                 x
               </button>
             </div>
@@ -765,6 +766,22 @@ function App() {
           })}
         </div>
       </section>
+
+      {userToRemove && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h3>Remove Player?</h3>
+            <p>Are you sure you want to remove <strong>{userToRemove}</strong>? This will delete all their predictions.</p>
+            <div className="modal-actions">
+              <button onClick={() => setUserToRemove(null)} className="cancel-btn">Cancel</button>
+              <button onClick={() => {
+                confirmRemoveUser(userToRemove)
+                setUserToRemove(null)
+              }} className="confirm-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   )
 }

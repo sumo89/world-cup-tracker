@@ -293,6 +293,28 @@ function App() {
   const [userToRemove, setUserToRemove] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!supabase) return
+
+    const loadUsers = async () => {
+      try {
+        const { data: dbUsers } = await supabase!.from('users').select('id, name')
+        if (dbUsers && dbUsers.length > 0) {
+          const names = dbUsers.map((u: any) => u.name)
+          const ids: Record<string, string> = {}
+          for (const user of dbUsers) {
+            ids[user.name] = user.id
+          }
+          setUsers(names)
+          setUserIdByName(ids)
+        }
+      } catch (err) {
+        console.error('Failed to load users from Supabase:', err)
+      }
+    }
+    void loadUsers()
+  }, [])
+
+  useEffect(() => {
     localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users))
     if (!supabase || users.length === 0) return
 

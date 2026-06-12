@@ -9,6 +9,7 @@ type FixtureRecord = {
   fixtureId: number
   date: string
   round: string
+  group: string | null
   statusShort: string
   statusLong: string
   venueName: string | null
@@ -30,6 +31,17 @@ type FixtureRecord = {
 }
 
 type PredictionsByFixture = Record<string, Record<string, PredictionChoice>>
+
+type StageTab = 'group-stage' | 'round-of-32-16' | 'knockouts'
+
+function getStageTab(group: string | null): StageTab {
+  if (!group) return 'group-stage'
+  const g = group.toUpperCase()
+  if (/^[A-L]$/.test(g)) return 'group-stage'
+  if (g === 'R32' || g === 'R16') return 'round-of-32-16'
+  if (['QF', 'SF', '3RD', 'FINAL'].includes(g)) return 'knockouts'
+  return 'group-stage'
+}
 
 
 
@@ -192,6 +204,7 @@ function mapApiFixture(game: WorldCupApiGame, stadiumById: Map<string, WorldCupA
     fixture_id: Number(game.id),
     date: parseLocalDate(game.local_date) ?? new Date().toISOString(),
     round: toRound(game),
+    group: game.group || null,
     status_short: status.short,
     status_long: status.long,
     venue_name: stadium?.name_en ?? stadium?.fifa_name ?? null,
@@ -211,6 +224,7 @@ function toFixtureRecord(fixture: ReturnType<typeof mapApiFixture>): FixtureReco
     fixtureId: fixture.fixture_id,
     date: fixture.date,
     round: fixture.round,
+    group: fixture.group || null,
     statusShort: fixture.status_short,
     statusLong: fixture.status_long,
     venueName: fixture.venue_name,
@@ -275,6 +289,7 @@ function App() {
   const [newUser, setNewUser] = useState('')
   const [selectedRound, setSelectedRound] = useState('all')
   const [filter, setFilter] = useState<MatchFilter>('all')
+  const [activeTab, setActiveTab] = useState<StageTab>('group-stage')
 
   useEffect(() => {
     localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users))
@@ -376,6 +391,9 @@ function App() {
 
   const visibleMatches = useMemo(() => {
     return matches.filter((m) => {
+      if (getStageTab(m.group) !== activeTab) {
+        return false
+      }
       if (selectedRound !== 'all' && m.round !== selectedRound) {
         return false
       }
@@ -387,14 +405,18 @@ function App() {
       }
       return true
     })
-  }, [matches, selectedRound, filter])
+  }, [matches, selectedRound, filter, activeTab])
+
+  const stageMatches = useMemo(() => {
+    return matches.filter((m) => getStageTab(m.group) === activeTab)
+  }, [matches, activeTab])
 
   const leaderboard = useMemo(() => {
     return users
       .map((user) => {
         let correct = 0
         let attempts = 0
-        for (const match of matches) {
+        for (const match of stageMatches) {
           const outcome = matchOutcome(match)
           if (!outcome) {
             continue
@@ -416,7 +438,7 @@ function App() {
         }
       })
       .sort((a, b) => b.correct - a.correct || b.accuracy - a.accuracy)
-  }, [users, predictions, matches])
+  }, [users, predictions, stageMatches])
 
   const completedCount = useMemo(
     () => matches.filter((m) => isCompleted(m.statusShort)).length,
@@ -592,6 +614,28 @@ function App() {
 
       <section className="panel controls-panel">
         <h2>Match Filters</h2>
+        <div className="row wrap">
+          <div className="segmented">
+            <button
+              className={activeTab === 'group-stage' ? 'active' : ''}
+              onClick={() => setActiveTab('group-stage')}
+            >
+              Group Stage
+            </button>
+            <button
+              className={activeTab === 'round-of-32-16' ? 'active' : ''}
+              onClick={() => setActiveTab('round-of-32-16')}
+            >
+              R32 & R16
+            </button>
+            <button
+              className={activeTab === 'knockouts' ? 'active' : ''}
+              onClick={() => setActiveTab('knockouts')}
+            >
+              Finals
+            </button>
+          </div>
+        </div>
         <div className="row wrap">
           <div className="segmented">
             <button

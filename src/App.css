@@ -167,20 +167,21 @@ button:hover {
 }
 
 .segmented {
-  display: inline-flex;
+  display: flex;
   gap: 0.3rem;
   background: #eff5f9;
   border-radius: 12px;
   padding: 0.25rem;
   border: 1px solid var(--line);
-  overflow-x: auto;
-  max-width: 100%;
+  flex: 1;
 }
 
 .segmented button {
   background: transparent;
   color: var(--text);
   min-height: 36px;
+  flex: 1;
+  white-space: nowrap;
 }
 
 .segmented button.active {

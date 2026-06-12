@@ -351,6 +351,37 @@ function App() {
   }, [users])
 
   useEffect(() => {
+    if (!supabase || Object.keys(userIdByName).length === 0) return
+
+    const loadPredictions = async () => {
+      try {
+        const { data: dbPredictions } = await supabase!
+          .from('predictions')
+          .select('fixture_id, user_id, choice')
+        if (dbPredictions && dbPredictions.length > 0) {
+          const predictions: PredictionsByFixture = {}
+          for (const pred of dbPredictions) {
+            const fixtureId = String(pred.fixture_id)
+            if (!predictions[fixtureId]) {
+              predictions[fixtureId] = {}
+            }
+            const userName = Object.entries(userIdByName).find(
+              ([, id]) => id === pred.user_id,
+            )?.[0]
+            if (userName) {
+              predictions[fixtureId][userName] = pred.choice
+            }
+          }
+          setPredictions(predictions)
+        }
+      } catch (err) {
+        console.error('Failed to load predictions from Supabase:', err)
+      }
+    }
+    void loadPredictions()
+  }, [userIdByName])
+
+  useEffect(() => {
     localStorage.setItem(PREDICTIONS_STORAGE_KEY, JSON.stringify(predictions))
   }, [predictions])
 

@@ -508,6 +508,11 @@ function App() {
     user: string,
     choice: PredictionChoice,
   ) => {
+    const match = matches.find((m) => m.fixtureId === fixtureId)
+    if (match && matchOutcome(match)) {
+      return
+    }
+
     if (supabase) {
       const db = supabase
       const userId = userIdByName[user]
@@ -738,6 +743,7 @@ function App() {
                                           }`
                                         : 'pick'
                                     }
+                                    disabled={Boolean(outcome)}
                                     onClick={() =>
                                       setPrediction(match.fixtureId, user, choice)
                                     }

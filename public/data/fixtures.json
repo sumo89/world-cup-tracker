@@ -95,8 +95,8 @@
     "fixtureId": 8,
     "date": "2026-06-13T12:00:00.000Z",
     "round": "Group B - 1",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -110,7 +110,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 1,
       "away": 1
     }
   },

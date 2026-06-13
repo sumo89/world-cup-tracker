@@ -72,8 +72,8 @@
     "fixtureId": 4,
     "date": "2026-06-12T18:00:00.000Z",
     "round": "Group D - 1",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
@@ -87,7 +87,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 2,
       "away": 0
     }
   },

@@ -118,8 +118,8 @@
     "fixtureId": 7,
     "date": "2026-06-13T18:00:00.000Z",
     "round": "Group C - 1",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {

@@ -187,8 +187,8 @@
     "fixtureId": 10,
     "date": "2026-06-14T12:00:00.000Z",
     "round": "Group E - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -202,8 +202,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 7,
+      "away": 1
     }
   },
   {

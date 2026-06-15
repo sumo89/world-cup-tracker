@@ -603,12 +603,7 @@ function App() {
   return (
     <main className="app-shell">
       <header className="hero">
-        <p className="hero-kicker">2026 World Cup Prediction Board</p>
-        <h1>Track Every Match. Beat Every Friend.</h1>
-        <p>
-          Live schedule and results from worldcup26.ir, predictions backed by cloud
-          database, and an automatic leaderboard.
-        </p>
+        <h1>2026 Aarrass World Cup</h1>
         {syncingToDb && <p className="syncing-indicator">Syncing to database...</p>}
       </header>
 
@@ -623,7 +618,7 @@ function App() {
         </article>
         <article>
           <h2>{matches.length - completedCount}</h2>
-          <p>Upcoming / Live</p>
+          <p>Upcoming Matches</p>
         </article>
         <article>
           <h2>{users.length}</h2>

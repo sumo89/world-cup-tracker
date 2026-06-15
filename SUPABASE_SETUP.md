@@ -33,6 +33,7 @@ create table fixtures (
   fixture_id integer primary key,
   date timestamp with time zone not null,
   round text not null,
+  "group" text,
   status_short text not null,
   status_long text not null,
   venue_name text,

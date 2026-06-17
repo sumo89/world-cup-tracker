@@ -394,8 +394,8 @@
     "fixtureId": 18,
     "date": "2026-06-16T18:00:00.000Z",
     "round": "Group I - 1",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
@@ -410,15 +410,15 @@
     },
     "goals": {
       "home": 1,
-      "away": 2
+      "away": 4
     }
   },
   {
     "fixtureId": 19,
     "date": "2026-06-16T20:00:00.000Z",
     "round": "Group J - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
@@ -432,16 +432,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 0
     }
   },
   {
     "fixtureId": 20,
     "date": "2026-06-16T21:00:00.000Z",
     "round": "Group J - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -455,8 +455,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 1
     }
   },
   {

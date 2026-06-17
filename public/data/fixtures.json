@@ -463,8 +463,8 @@
     "fixtureId": 21,
     "date": "2026-06-17T12:00:00.000Z",
     "round": "Group K - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -478,16 +478,16 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     }
   },
   {
     "fixtureId": 22,
     "date": "2026-06-17T15:00:00.000Z",
     "round": "Group L - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -501,8 +501,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 4,
+      "away": 2
     }
   },
   {
@@ -524,8 +524,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -547,8 +547,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {

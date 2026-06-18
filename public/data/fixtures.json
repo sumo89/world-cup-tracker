@@ -555,8 +555,8 @@
     "fixtureId": 26,
     "date": "2026-06-18T12:00:00.000Z",
     "round": "Group B - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
@@ -570,16 +570,16 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 4,
+      "away": 1
     }
   },
   {
     "fixtureId": 28,
     "date": "2026-06-18T12:00:00.000Z",
     "round": "Group A - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -593,16 +593,16 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     }
   },
   {
     "fixtureId": 27,
     "date": "2026-06-18T15:00:00.000Z",
     "round": "Group B - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -616,8 +616,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     }
   },
   {

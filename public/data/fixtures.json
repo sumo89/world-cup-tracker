@@ -509,8 +509,8 @@
     "fixtureId": 24,
     "date": "2026-06-17T19:00:00.000Z",
     "round": "Group L - 1",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -524,7 +524,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 1,
       "away": 0
     }
   },
@@ -532,8 +532,8 @@
     "fixtureId": 23,
     "date": "2026-06-17T20:00:00.000Z",
     "round": "Group K - 1",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio Azteca",
     "venueCity": "Mexico City",
     "homeTeam": {
@@ -547,8 +547,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 3
     }
   },
   {

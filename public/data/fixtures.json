@@ -624,8 +624,8 @@
     "fixtureId": 25,
     "date": "2026-06-18T19:00:00.000Z",
     "round": "Group A - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara (Zapopan)",
     "homeTeam": {
@@ -639,8 +639,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     }
   },
   {

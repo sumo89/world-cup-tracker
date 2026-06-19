@@ -616,8 +616,8 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
-      "away": 1
+      "home": 6,
+      "away": 0
     }
   },
   {
@@ -639,8 +639,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {

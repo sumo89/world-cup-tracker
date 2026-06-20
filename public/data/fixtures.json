@@ -739,8 +739,8 @@
     "fixtureId": 35,
     "date": "2026-06-20T12:00:00.000Z",
     "round": "Group F - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -754,7 +754,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 2,
       "away": 0
     }
   },

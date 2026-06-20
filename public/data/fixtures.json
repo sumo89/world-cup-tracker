@@ -647,8 +647,8 @@
     "fixtureId": 31,
     "date": "2026-06-19T12:00:00.000Z",
     "round": "Group D - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -662,7 +662,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 2,
       "away": 0
     }
   },
@@ -670,8 +670,8 @@
     "fixtureId": 30,
     "date": "2026-06-19T18:00:00.000Z",
     "round": "Group C - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
@@ -686,15 +686,15 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 1
     }
   },
   {
     "fixtureId": 32,
     "date": "2026-06-19T20:00:00.000Z",
     "round": "Group D - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -709,15 +709,15 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 1
     }
   },
   {
     "fixtureId": 29,
     "date": "2026-06-19T21:00:00.000Z",
     "round": "Group C - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia",
     "homeTeam": {
@@ -731,7 +731,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 3,
       "away": 0
     }
   },
@@ -1802,8 +1802,8 @@
     "venueName": "Estadio Azteca",
     "venueCity": "Mexico City",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group A",
+      "id": 1,
+      "name": "Mexico",
       "logo": null
     },
     "awayTeam": {
@@ -1871,8 +1871,8 @@
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group D",
+      "id": 13,
+      "name": "United States",
       "logo": null
     },
     "awayTeam": {

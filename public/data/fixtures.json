@@ -739,8 +739,8 @@
     "fixtureId": 35,
     "date": "2026-06-20T12:00:00.000Z",
     "round": "Group F - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -754,16 +754,16 @@
       "logo": null
     },
     "goals": {
-      "home": 2,
-      "away": 0
+      "home": 5,
+      "away": 1
     }
   },
   {
     "fixtureId": 33,
     "date": "2026-06-20T16:00:00.000Z",
     "round": "Group E - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -778,7 +778,7 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 1
     }
   },
   {
@@ -800,8 +800,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -823,8 +823,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {

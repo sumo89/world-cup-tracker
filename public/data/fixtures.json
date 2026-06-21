@@ -785,8 +785,8 @@
     "fixtureId": 34,
     "date": "2026-06-20T19:00:00.000Z",
     "round": "Group E - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
@@ -808,8 +808,8 @@
     "fixtureId": 36,
     "date": "2026-06-20T22:00:00.000Z",
     "round": "Group F - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey (Guadalupe)",
     "homeTeam": {
@@ -823,8 +823,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 4
     }
   },
   {

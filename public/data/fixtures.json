@@ -785,8 +785,8 @@
     "fixtureId": 34,
     "date": "2026-06-20T19:00:00.000Z",
     "round": "Group E - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
@@ -800,8 +800,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {

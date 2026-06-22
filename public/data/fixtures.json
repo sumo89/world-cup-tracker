@@ -923,8 +923,8 @@
     "fixtureId": 43,
     "date": "2026-06-22T12:00:00.000Z",
     "round": "Group J - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -938,16 +938,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 0
     }
   },
   {
     "fixtureId": 41,
     "date": "2026-06-22T17:00:00.000Z",
     "round": "Group I - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia",
     "homeTeam": {
@@ -961,8 +961,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     }
   },
   {

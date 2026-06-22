@@ -877,8 +877,8 @@
     "fixtureId": 38,
     "date": "2026-06-21T18:00:00.000Z",
     "round": "Group G - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -892,16 +892,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     }
   },
   {
     "fixtureId": 40,
     "date": "2026-06-21T18:00:00.000Z",
     "round": "Group H - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -916,7 +916,7 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 2
     }
   },
   {

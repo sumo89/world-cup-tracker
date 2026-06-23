@@ -1015,8 +1015,8 @@
     "fixtureId": 45,
     "date": "2026-06-23T12:00:00.000Z",
     "round": "Group K - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -1030,7 +1030,7 @@
       "logo": null
     },
     "goals": {
-      "home": 3,
+      "home": 5,
       "away": 0
     }
   },
@@ -1038,8 +1038,8 @@
     "fixtureId": 48,
     "date": "2026-06-23T16:00:00.000Z",
     "round": "Group L - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
@@ -1053,8 +1053,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {
@@ -1099,8 +1099,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {

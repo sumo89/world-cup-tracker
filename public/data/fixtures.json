@@ -969,8 +969,8 @@
     "fixtureId": 42,
     "date": "2026-06-22T20:00:00.000Z",
     "round": "Group I - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -985,15 +985,15 @@
     },
     "goals": {
       "home": 3,
-      "away": 1
+      "away": 2
     }
   },
   {
     "fixtureId": 44,
     "date": "2026-06-22T20:00:00.000Z",
     "round": "Group J - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -1007,8 +1007,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     }
   },
   {

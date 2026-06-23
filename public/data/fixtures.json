@@ -1038,8 +1038,8 @@
     "fixtureId": 48,
     "date": "2026-06-23T16:00:00.000Z",
     "round": "Group L - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {

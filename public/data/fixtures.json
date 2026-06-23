@@ -946,8 +946,8 @@
     "fixtureId": 41,
     "date": "2026-06-22T17:00:00.000Z",
     "round": "Group I - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia",
     "homeTeam": {
@@ -961,7 +961,7 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
+      "home": 3,
       "away": 0
     }
   },
@@ -969,8 +969,8 @@
     "fixtureId": 42,
     "date": "2026-06-22T20:00:00.000Z",
     "round": "Group I - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -984,8 +984,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 1
     }
   },
   {

@@ -1153,8 +1153,8 @@
     "fixtureId": 50,
     "date": "2026-06-24T18:00:00.000Z",
     "round": "Group C - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -1168,16 +1168,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 2
     }
   },
   {
     "fixtureId": 49,
     "date": "2026-06-24T18:00:00.000Z",
     "round": "Group C - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -1191,8 +1191,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     }
   },
   {
@@ -1214,8 +1214,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1237,8 +1237,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1669,8 +1669,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group B",
+      "id": 5,
+      "name": "Canada",
       "logo": null
     },
     "goals": {
@@ -1940,8 +1940,8 @@
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group B",
+      "id": 8,
+      "name": "Switzerland",
       "logo": null
     },
     "awayTeam": {
@@ -1986,8 +1986,8 @@
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group J",
+      "id": 37,
+      "name": "Argentina",
       "logo": null
     },
     "awayTeam": {

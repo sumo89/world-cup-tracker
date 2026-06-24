@@ -1084,8 +1084,8 @@
     "fixtureId": 47,
     "date": "2026-06-23T20:00:00.000Z",
     "round": "Group K - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara (Zapopan)",
     "homeTeam": {

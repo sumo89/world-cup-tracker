@@ -1107,8 +1107,8 @@
     "fixtureId": 53,
     "date": "2026-06-24T12:00:00.000Z",
     "round": "Group B - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -1122,16 +1122,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 1
     }
   },
   {
     "fixtureId": 54,
     "date": "2026-06-24T12:00:00.000Z",
     "round": "Group B - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -1145,8 +1145,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {

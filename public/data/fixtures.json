@@ -1061,8 +1061,8 @@
     "fixtureId": 46,
     "date": "2026-06-23T19:00:00.000Z",
     "round": "Group L - 2",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -1077,15 +1077,15 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 1
     }
   },
   {
     "fixtureId": 47,
     "date": "2026-06-23T20:00:00.000Z",
     "round": "Group K - 2",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara (Zapopan)",
     "homeTeam": {
@@ -1099,8 +1099,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     }
   },
   {

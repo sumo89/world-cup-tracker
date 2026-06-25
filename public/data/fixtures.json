@@ -1153,8 +1153,8 @@
     "fixtureId": 50,
     "date": "2026-06-24T18:00:00.000Z",
     "round": "Group C - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -1168,7 +1168,7 @@
       "logo": null
     },
     "goals": {
-      "home": 2,
+      "home": 4,
       "away": 2
     }
   },
@@ -1176,8 +1176,8 @@
     "fixtureId": 49,
     "date": "2026-06-24T18:00:00.000Z",
     "round": "Group C - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -1192,7 +1192,7 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 3
     }
   },
   {

@@ -1664,8 +1664,8 @@
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
-      "id": 0,
-      "name": "Runner-up Group A",
+      "id": 2,
+      "name": "South Africa",
       "logo": null
     },
     "awayTeam": {
@@ -1687,8 +1687,8 @@
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group C",
+      "id": 9,
+      "name": "Brazil",
       "logo": null
     },
     "awayTeam": {
@@ -1738,8 +1738,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group C",
+      "id": 10,
+      "name": "Morocco",
       "logo": null
     },
     "goals": {

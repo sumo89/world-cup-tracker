@@ -1398,8 +1398,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1421,8 +1421,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1692,8 +1692,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group F",
+      "id": 22,
+      "name": "Japan",
       "logo": null
     },
     "goals": {
@@ -1733,8 +1733,8 @@
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey (Guadalupe)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group F",
+      "id": 21,
+      "name": "Netherlands",
       "logo": null
     },
     "awayTeam": {
@@ -1756,8 +1756,8 @@
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
-      "id": 0,
-      "name": "Runner-up Group E",
+      "id": 19,
+      "name": "Ivory Coast",
       "logo": null
     },
     "awayTeam": {
@@ -1876,8 +1876,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group B/E/F/I/J",
+      "id": 6,
+      "name": "Bosnia and Herzegovina",
       "logo": null
     },
     "goals": {
@@ -1963,8 +1963,8 @@
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
-      "id": 0,
-      "name": "Runner-up Group D",
+      "id": 15,
+      "name": "Australia",
       "logo": null
     },
     "awayTeam": {

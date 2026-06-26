@@ -1291,8 +1291,8 @@
     "fixtureId": 59,
     "date": "2026-06-25T18:00:00.000Z",
     "round": "Group F - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -1306,16 +1306,16 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     }
   },
   {
     "fixtureId": 60,
     "date": "2026-06-25T18:00:00.000Z",
     "round": "Group F - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
@@ -1329,16 +1329,16 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 2
+      "home": 1,
+      "away": 3
     }
   },
   {
     "fixtureId": 58,
     "date": "2026-06-25T19:00:00.000Z",
     "round": "Group D - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
@@ -1352,16 +1352,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 2
     }
   },
   {
     "fixtureId": 57,
     "date": "2026-06-25T19:00:00.000Z",
     "round": "Group D - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -1375,8 +1375,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {

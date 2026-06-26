@@ -1383,8 +1383,8 @@
     "fixtureId": 61,
     "date": "2026-06-26T15:00:00.000Z",
     "round": "Group I - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -1398,16 +1398,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 4,
+      "away": 0
     }
   },
   {
     "fixtureId": 62,
     "date": "2026-06-26T15:00:00.000Z",
     "round": "Group I - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
@@ -1421,8 +1421,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 3
     }
   },
   {
@@ -1444,8 +1444,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1467,8 +1467,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1490,8 +1490,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {
@@ -1513,8 +1513,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": null,
+      "away": null
     }
   },
   {

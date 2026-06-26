@@ -1383,8 +1383,8 @@
     "fixtureId": 61,
     "date": "2026-06-26T15:00:00.000Z",
     "round": "Group I - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -1398,7 +1398,7 @@
       "logo": null
     },
     "goals": {
-      "home": 4,
+      "home": 5,
       "away": 0
     }
   },
@@ -1406,8 +1406,8 @@
     "fixtureId": 62,
     "date": "2026-06-26T15:00:00.000Z",
     "round": "Group I - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
@@ -1422,7 +1422,7 @@
     },
     "goals": {
       "home": 1,
-      "away": 3
+      "away": 4
     }
   },
   {
@@ -1761,8 +1761,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group I",
+      "id": 36,
+      "name": "Norway",
       "logo": null
     },
     "goals": {
@@ -1779,8 +1779,8 @@
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group I",
+      "id": 33,
+      "name": "France",
       "logo": null
     },
     "awayTeam": {

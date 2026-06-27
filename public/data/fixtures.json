@@ -1475,8 +1475,8 @@
     "fixtureId": 63,
     "date": "2026-06-26T20:00:00.000Z",
     "round": "Group G - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -1498,8 +1498,8 @@
     "fixtureId": 64,
     "date": "2026-06-26T20:00:00.000Z",
     "round": "Group G - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -1513,8 +1513,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 1
+      "home": 1,
+      "away": 5
     }
   },
   {
@@ -1825,8 +1825,8 @@
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group L",
+      "id": 25,
+      "name": "Belgium",
       "logo": null
     },
     "awayTeam": {
@@ -1968,8 +1968,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group G",
+      "id": 26,
+      "name": "Egypt",
       "logo": null
     },
     "goals": {

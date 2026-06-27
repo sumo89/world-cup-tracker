@@ -1521,8 +1521,8 @@
     "fixtureId": 67,
     "date": "2026-06-27T17:00:00.000Z",
     "round": "Group L - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -1537,15 +1537,15 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 2
     }
   },
   {
     "fixtureId": 68,
     "date": "2026-06-27T17:00:00.000Z",
     "round": "Group L - 3",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia",
     "homeTeam": {
@@ -1559,16 +1559,16 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
-      "away": 0
+      "home": 2,
+      "away": 1
     }
   },
   {
     "fixtureId": 72,
     "date": "2026-06-27T19:30:00.000Z",
     "round": "Group K - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -1582,16 +1582,16 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {
     "fixtureId": 71,
     "date": "2026-06-27T19:30:00.000Z",
     "round": "Group K - 3",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -1605,8 +1605,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     }
   },
   {

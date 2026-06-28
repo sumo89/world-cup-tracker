@@ -1784,8 +1784,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group C/D/F/G/H",
+      "id": 23,
+      "name": "Sweden",
       "logo": null
     },
     "goals": {
@@ -1807,8 +1807,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group C/E/F/H/I",
+      "id": 20,
+      "name": "Ecuador",
       "logo": null
     },
     "goals": {
@@ -1825,13 +1825,13 @@
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 25,
-      "name": "Belgium",
+      "id": 45,
+      "name": "England",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group E/H/I/J/K",
+      "id": 42,
+      "name": "Democratic Republic of the Congo",
       "logo": null
     },
     "goals": {
@@ -1848,13 +1848,13 @@
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group G",
+      "id": 25,
+      "name": "Belgium",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group A/E/H/I/J",
+      "id": 34,
+      "name": "Senegal",
       "logo": null
     },
     "goals": {
@@ -1894,13 +1894,13 @@
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group H",
+      "id": 29,
+      "name": "Spain",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group J",
+      "id": 39,
+      "name": "Austria",
       "logo": null
     },
     "goals": {
@@ -1917,13 +1917,13 @@
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
-      "id": 0,
-      "name": "Runner-up Group K",
+      "id": 41,
+      "name": "Portugal",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Runner-up Group L",
+      "id": 46,
+      "name": "Croatia",
       "logo": null
     },
     "goals": {
@@ -1945,8 +1945,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group E/F/G/I/J",
+      "id": 38,
+      "name": "Algeria",
       "logo": null
     },
     "goals": {
@@ -2009,13 +2009,13 @@
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Group K",
+      "id": 44,
+      "name": "Colombia",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "3rd Group D/E/I/J/L",
+      "id": 47,
+      "name": "Ghana",
       "logo": null
     },
     "goals": {

@@ -1659,8 +1659,8 @@
     "fixtureId": 73,
     "date": "2026-06-28T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
@@ -1675,7 +1675,7 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 1
     }
   },
   {

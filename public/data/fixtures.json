@@ -1682,8 +1682,8 @@
     "fixtureId": 76,
     "date": "2026-06-29T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "NRG Stadium",
     "venueCity": "Houston",
     "homeTeam": {
@@ -1697,8 +1697,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     }
   },
   {

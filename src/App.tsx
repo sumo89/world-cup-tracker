@@ -27,6 +27,8 @@ type FixtureRecord = {
   goals: {
     home: number | null
     away: number | null
+    homePenalty?: number | null
+    awayPenalty?: number | null
   }
 }
 
@@ -64,6 +66,8 @@ type WorldCupApiGame = {
   away_team_id?: string | number
   home_score?: string | number
   away_score?: string | number
+  home_penalty_score?: string | number
+  away_penalty_score?: string | number
   finished?: string
   time_elapsed?: string
 }
@@ -101,15 +105,32 @@ function isCompleted(statusShort: string) {
 function matchOutcome(match: FixtureRecord): PredictionChoice | null {
   const home = match.goals.home
   const away = match.goals.away
+
   if (!isCompleted(match.statusShort) || home == null || away == null) {
     return null
   }
+
   if (home > away) {
     return 'home'
   }
   if (away > home) {
     return 'away'
   }
+
+  const homePenalty = match.goals.homePenalty
+  const awayPenalty = match.goals.awayPenalty
+
+  if (homePenalty == null || awayPenalty == null) {
+    return 'draw'
+  }
+
+  if (homePenalty > awayPenalty) {
+    return 'home'
+  }
+  if (awayPenalty > homePenalty) {
+    return 'away'
+  }
+
   return 'draw'
 }
 
@@ -215,6 +236,8 @@ function mapApiFixture(game: WorldCupApiGame, stadiumById: Map<string, WorldCupA
     away_team_name: awayName,
     home_score: toNumberOrNull(game.home_score),
     away_score: toNumberOrNull(game.away_score),
+    home_penalty_score: toNumberOrNull(game.home_penalty_score),
+    away_penalty_score: toNumberOrNull(game.away_penalty_score),
     updated_at: new Date().toISOString(),
   }
 }
@@ -242,6 +265,8 @@ function toFixtureRecord(fixture: ReturnType<typeof mapApiFixture>): FixtureReco
     goals: {
       home: fixture.home_score,
       away: fixture.away_score,
+      homePenalty: fixture.home_penalty_score,
+      awayPenalty: fixture.away_penalty_score,
     },
   }
 }
@@ -397,7 +422,11 @@ function App() {
         if (supabase) {
           setSyncingToDb(true)
           try {
-            await supabase.from('fixtures').upsert(liveFixtures, {
+            const fixturesForDb = liveFixtures.map(
+              ({ home_penalty_score, away_penalty_score, ...fixture }) => fixture,
+            )
+
+            await supabase.from('fixtures').upsert(fixturesForDb, {
               onConflict: 'fixture_id',
             })
             localStorage.setItem(FIXTURES_SYNC_STORAGE_KEY, 'done')
@@ -736,10 +765,14 @@ function App() {
         <div className="match-list">
           {visibleMatches.map((match) => {
             const outcome = matchOutcome(match)
-            const score =
+            const goalsScore =
               match.goals.home == null || match.goals.away == null
                 ? 'vs'
                 : `${match.goals.home} - ${match.goals.away}`
+            const penaltiesScore =
+              match.goals.homePenalty == null || match.goals.awayPenalty == null
+                ? null
+                : `${match.goals.homePenalty} - ${match.goals.awayPenalty}`
 
             return (
               <article className="match-card" key={match.fixtureId}>
@@ -749,7 +782,12 @@ function App() {
                 </div>
                 <div className="teams">
                   <span>{match.homeTeam.name}</span>
-                  <strong>{score}</strong>
+                  <div className="score-stack">
+                    <strong>{`Goals: ${goalsScore}`}</strong>
+                    {penaltiesScore ? (
+                      <span className="penalty-score">Penalties: {penaltiesScore}</span>
+                    ) : null}
+                  </div>
                   <span>{match.awayTeam.name}</span>
                 </div>
                 <p className="status">
@@ -757,7 +795,14 @@ function App() {
                   {match.venueName ? ` • ${match.venueName}` : ''}
                 </p>
                 {outcome ? (
-                  <p className="result-pill">Result: {outcome.toUpperCase()}</p>
+                  <p className="result-pill">
+                    Result:{' '}
+                    {outcome === 'home'
+                      ? match.homeTeam.name
+                      : outcome === 'away'
+                        ? match.awayTeam.name
+                        : 'Draw'}
+                  </p>
                 ) : null}
 
                 {users.length > 0 ? (

@@ -124,6 +124,8 @@ function mapFixture(game, stadiumById) {
     goals: {
       home: toNumberOrNull(game.home_score),
       away: toNumberOrNull(game.away_score),
+      homePenalty: toNumberOrNull(game.home_penalty_score),
+      awayPenalty: toNumberOrNull(game.away_penalty_score),
     },
   }
 }

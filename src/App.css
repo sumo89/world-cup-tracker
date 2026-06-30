@@ -249,6 +249,18 @@ button:hover {
   white-space: nowrap;
 }
 
+.score-stack {
+  display: grid;
+  justify-items: center;
+  gap: 0.05rem;
+}
+
+.penalty-score {
+  color: var(--muted);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .result-pill {
   display: inline-block;
   margin: 0.35rem 0;

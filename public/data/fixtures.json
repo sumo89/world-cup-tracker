@@ -1903,8 +1903,8 @@
     "fixtureId": 78,
     "date": "2026-06-30T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -1918,8 +1918,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": 1,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2263,8 +2263,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 78",
+      "id": 36,
+      "name": "Norway",
       "logo": null
     },
     "goals": {

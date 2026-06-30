@@ -1728,8 +1728,8 @@
     "fixtureId": 75,
     "date": "2026-06-29T19:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey (Guadalupe)",
     "homeTeam": {
@@ -1743,8 +1743,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     }
   },
   {
@@ -2037,8 +2037,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 75",
+      "id": 10,
+      "name": "Morocco",
       "logo": null
     },
     "goals": {

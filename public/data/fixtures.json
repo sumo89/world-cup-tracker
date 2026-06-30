@@ -1903,8 +1903,8 @@
     "fixtureId": 78,
     "date": "2026-06-30T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -1918,8 +1918,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }

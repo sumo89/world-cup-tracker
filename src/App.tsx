@@ -313,8 +313,8 @@ function App() {
   )
   const [newUser, setNewUser] = useState('')
   const [selectedRound, setSelectedRound] = useState('all')
-  const [filter, setFilter] = useState<MatchFilter>('all')
-  const [activeTab, setActiveTab] = useState<StageTab>('group-stage')
+  const [filter, setFilter] = useState<MatchFilter>('upcoming')
+  const [activeTab, setActiveTab] = useState<StageTab>('round-of-32-16')
   const [userToRemove, setUserToRemove] = useState<string | null>(null)
 
   useEffect(() => {

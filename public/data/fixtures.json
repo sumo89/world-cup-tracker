@@ -19,7 +19,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -42,7 +44,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -65,7 +69,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -88,7 +94,9 @@
     },
     "goals": {
       "home": 4,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -111,7 +119,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -134,7 +144,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -157,7 +169,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -180,7 +194,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -203,7 +219,9 @@
     },
     "goals": {
       "home": 7,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -226,7 +244,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -249,7 +269,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -272,7 +294,9 @@
     },
     "goals": {
       "home": 5,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -295,7 +319,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -318,7 +344,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -341,7 +369,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -364,7 +394,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -387,7 +419,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -410,7 +444,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 4
+      "away": 4,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -433,7 +469,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -456,7 +494,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -479,7 +519,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -502,7 +544,9 @@
     },
     "goals": {
       "home": 4,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -525,7 +569,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -548,7 +594,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -571,7 +619,9 @@
     },
     "goals": {
       "home": 4,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -594,7 +644,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -617,7 +669,9 @@
     },
     "goals": {
       "home": 6,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -640,7 +694,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -663,7 +719,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -686,7 +744,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -709,7 +769,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -732,7 +794,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -755,7 +819,9 @@
     },
     "goals": {
       "home": 5,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -778,7 +844,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -801,7 +869,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -824,7 +894,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 4
+      "away": 4,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -847,7 +919,9 @@
     },
     "goals": {
       "home": 4,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -870,7 +944,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -893,7 +969,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -916,7 +994,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -939,7 +1019,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -962,7 +1044,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -985,7 +1069,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1008,7 +1094,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1031,7 +1119,9 @@
     },
     "goals": {
       "home": 5,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1054,7 +1144,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1077,7 +1169,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1100,7 +1194,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1123,7 +1219,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1146,7 +1244,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1169,7 +1269,9 @@
     },
     "goals": {
       "home": 4,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1192,7 +1294,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1215,7 +1319,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1238,7 +1344,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1261,7 +1369,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1284,7 +1394,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1307,7 +1419,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1330,7 +1444,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1353,7 +1469,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1376,7 +1494,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1399,7 +1519,9 @@
     },
     "goals": {
       "home": 5,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1422,7 +1544,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 4
+      "away": 4,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1445,7 +1569,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1468,7 +1594,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1491,7 +1619,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1514,7 +1644,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 5
+      "away": 5,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1537,7 +1669,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 2
+      "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1560,7 +1694,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1583,7 +1719,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1606,7 +1744,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1629,7 +1769,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1652,7 +1794,9 @@
     },
     "goals": {
       "home": 3,
-      "away": 3
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1675,7 +1819,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1698,7 +1844,9 @@
     },
     "goals": {
       "home": 2,
-      "away": 1
+      "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1721,7 +1869,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": 3,
+      "awayPenalty": 4
     }
   },
   {
@@ -1744,7 +1894,9 @@
     },
     "goals": {
       "home": 1,
-      "away": 1
+      "away": 1,
+      "homePenalty": 2,
+      "awayPenalty": 3
     }
   },
   {
@@ -1767,7 +1919,9 @@
     },
     "goals": {
       "home": null,
-      "away": null
+      "away": null,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1790,7 +1944,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1813,7 +1969,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1836,7 +1994,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1859,7 +2019,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1882,7 +2044,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1905,7 +2069,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1928,7 +2094,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1951,7 +2119,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1974,7 +2144,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -1997,7 +2169,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2020,7 +2194,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2043,7 +2219,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2066,7 +2244,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2089,7 +2269,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2112,7 +2294,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2135,7 +2319,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2158,7 +2344,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2181,7 +2369,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2204,7 +2394,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2227,7 +2419,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2250,7 +2444,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2273,7 +2469,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2296,7 +2494,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2319,7 +2519,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2342,7 +2544,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2365,7 +2569,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   },
   {
@@ -2388,7 +2594,9 @@
     },
     "goals": {
       "home": 0,
-      "away": 0
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
     }
   }
 ]

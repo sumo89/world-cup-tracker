@@ -1928,8 +1928,8 @@
     "fixtureId": 77,
     "date": "2026-06-30T17:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -1968,8 +1968,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }

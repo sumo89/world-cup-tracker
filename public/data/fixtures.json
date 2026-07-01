@@ -1953,8 +1953,8 @@
     "fixtureId": 79,
     "date": "2026-06-30T19:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio Azteca",
     "venueCity": "Mexico City",
     "homeTeam": {
@@ -1968,8 +1968,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2283,8 +2283,8 @@
     "venueName": "Estadio Azteca",
     "venueCity": "Mexico City",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 79",
+      "id": 1,
+      "name": "Mexico",
       "logo": null
     },
     "awayTeam": {

@@ -2018,8 +2018,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 1,
+      "home": 3,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }

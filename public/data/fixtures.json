@@ -150,31 +150,6 @@
     }
   },
   {
-    "fixtureId": 6,
-    "date": "2026-06-13T21:00:00.000Z",
-    "round": "Group D - 1",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "BC Place",
-    "venueCity": "Vancouver",
-    "homeTeam": {
-      "id": 15,
-      "name": "Australia",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 16,
-      "name": "Turkey",
-      "logo": null
-    },
-    "goals": {
-      "home": 2,
-      "away": 0,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 5,
     "date": "2026-06-13T21:00:00.000Z",
     "round": "Group C - 1",
@@ -195,6 +170,31 @@
     "goals": {
       "home": 0,
       "away": 1,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 6,
+    "date": "2026-06-13T21:00:00.000Z",
+    "round": "Group D - 1",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "BC Place",
+    "venueCity": "Vancouver",
+    "homeTeam": {
+      "id": 15,
+      "name": "Australia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 16,
+      "name": "Turkey",
+      "logo": null
+    },
+    "goals": {
+      "home": 2,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -350,31 +350,6 @@
     }
   },
   {
-    "fixtureId": 16,
-    "date": "2026-06-15T18:00:00.000Z",
-    "round": "Group H - 1",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "Hard Rock Stadium",
-    "venueCity": "Miami (Miami Gardens)",
-    "homeTeam": {
-      "id": 31,
-      "name": "Saudi Arabia",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 32,
-      "name": "Uruguay",
-      "logo": null
-    },
-    "goals": {
-      "home": 1,
-      "away": 1,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 13,
     "date": "2026-06-15T18:00:00.000Z",
     "round": "Group G - 1",
@@ -395,6 +370,31 @@
     "goals": {
       "home": 2,
       "away": 2,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 16,
+    "date": "2026-06-15T18:00:00.000Z",
+    "round": "Group H - 1",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "Hard Rock Stadium",
+    "venueCity": "Miami (Miami Gardens)",
+    "homeTeam": {
+      "id": 31,
+      "name": "Saudi Arabia",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 32,
+      "name": "Uruguay",
+      "logo": null
+    },
+    "goals": {
+      "home": 1,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -900,31 +900,6 @@
     }
   },
   {
-    "fixtureId": 39,
-    "date": "2026-06-21T12:00:00.000Z",
-    "round": "Group H - 2",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "Mercedes-Benz Stadium",
-    "venueCity": "Atlanta",
-    "homeTeam": {
-      "id": 29,
-      "name": "Spain",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 31,
-      "name": "Saudi Arabia",
-      "logo": null
-    },
-    "goals": {
-      "home": 4,
-      "away": 0,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 37,
     "date": "2026-06-21T12:00:00.000Z",
     "round": "Group G - 2",
@@ -944,6 +919,31 @@
     },
     "goals": {
       "home": 0,
+      "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 39,
+    "date": "2026-06-21T12:00:00.000Z",
+    "round": "Group H - 2",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
+    "homeTeam": {
+      "id": 29,
+      "name": "Spain",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 31,
+      "name": "Saudi Arabia",
+      "logo": null
+    },
+    "goals": {
+      "home": 4,
       "away": 0,
       "homePenalty": null,
       "awayPenalty": null
@@ -1250,31 +1250,6 @@
     }
   },
   {
-    "fixtureId": 50,
-    "date": "2026-06-24T18:00:00.000Z",
-    "round": "Group C - 3",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "Mercedes-Benz Stadium",
-    "venueCity": "Atlanta",
-    "homeTeam": {
-      "id": 10,
-      "name": "Morocco",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 11,
-      "name": "Haiti",
-      "logo": null
-    },
-    "goals": {
-      "home": 4,
-      "away": 2,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 49,
     "date": "2026-06-24T18:00:00.000Z",
     "round": "Group C - 3",
@@ -1300,26 +1275,26 @@
     }
   },
   {
-    "fixtureId": 52,
-    "date": "2026-06-24T19:00:00.000Z",
-    "round": "Group A - 3",
+    "fixtureId": 50,
+    "date": "2026-06-24T18:00:00.000Z",
+    "round": "Group C - 3",
     "statusShort": "FT",
     "statusLong": "Match Finished",
-    "venueName": "Estadio Azteca",
-    "venueCity": "Mexico City",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 4,
-      "name": "Czech Republic",
+      "id": 10,
+      "name": "Morocco",
       "logo": null
     },
     "awayTeam": {
-      "id": 1,
-      "name": "Mexico",
+      "id": 11,
+      "name": "Haiti",
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 3,
+      "home": 4,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -1345,6 +1320,31 @@
     "goals": {
       "home": 1,
       "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 52,
+    "date": "2026-06-24T19:00:00.000Z",
+    "round": "Group A - 3",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "Estadio Azteca",
+    "venueCity": "Mexico City",
+    "homeTeam": {
+      "id": 4,
+      "name": "Czech Republic",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 1,
+      "name": "Mexico",
+      "logo": null
+    },
+    "goals": {
+      "home": 0,
+      "away": 3,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -1450,31 +1450,6 @@
     }
   },
   {
-    "fixtureId": 58,
-    "date": "2026-06-25T19:00:00.000Z",
-    "round": "Group D - 3",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "SoFi Stadium",
-    "venueCity": "Los Angeles (Inglewood)",
-    "homeTeam": {
-      "id": 16,
-      "name": "Turkey",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 13,
-      "name": "United States",
-      "logo": null
-    },
-    "goals": {
-      "home": 3,
-      "away": 2,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 57,
     "date": "2026-06-25T19:00:00.000Z",
     "round": "Group D - 3",
@@ -1495,6 +1470,31 @@
     "goals": {
       "home": 0,
       "away": 0,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 58,
+    "date": "2026-06-25T19:00:00.000Z",
+    "round": "Group D - 3",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "SoFi Stadium",
+    "venueCity": "Los Angeles (Inglewood)",
+    "homeTeam": {
+      "id": 16,
+      "name": "Turkey",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 13,
+      "name": "United States",
+      "logo": null
+    },
+    "goals": {
+      "home": 3,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -1700,31 +1700,6 @@
     }
   },
   {
-    "fixtureId": 72,
-    "date": "2026-06-27T19:30:00.000Z",
-    "round": "Group K - 3",
-    "statusShort": "FT",
-    "statusLong": "Match Finished",
-    "venueName": "Mercedes-Benz Stadium",
-    "venueCity": "Atlanta",
-    "homeTeam": {
-      "id": 42,
-      "name": "Democratic Republic of the Congo",
-      "logo": null
-    },
-    "awayTeam": {
-      "id": 43,
-      "name": "Uzbekistan",
-      "logo": null
-    },
-    "goals": {
-      "home": 3,
-      "away": 1,
-      "homePenalty": null,
-      "awayPenalty": null
-    }
-  },
-  {
     "fixtureId": 71,
     "date": "2026-06-27T19:30:00.000Z",
     "round": "Group K - 3",
@@ -1750,26 +1725,26 @@
     }
   },
   {
-    "fixtureId": 70,
-    "date": "2026-06-27T21:00:00.000Z",
-    "round": "Group J - 3",
+    "fixtureId": 72,
+    "date": "2026-06-27T19:30:00.000Z",
+    "round": "Group K - 3",
     "statusShort": "FT",
     "statusLong": "Match Finished",
-    "venueName": "AT&T Stadium",
-    "venueCity": "Dallas (Arlington, Texas)",
+    "venueName": "Mercedes-Benz Stadium",
+    "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 40,
-      "name": "Jordan",
+      "id": 42,
+      "name": "Democratic Republic of the Congo",
       "logo": null
     },
     "awayTeam": {
-      "id": 37,
-      "name": "Argentina",
+      "id": 43,
+      "name": "Uzbekistan",
       "logo": null
     },
     "goals": {
-      "home": 1,
-      "away": 3,
+      "home": 3,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -1794,6 +1769,31 @@
     },
     "goals": {
       "home": 3,
+      "away": 3,
+      "homePenalty": null,
+      "awayPenalty": null
+    }
+  },
+  {
+    "fixtureId": 70,
+    "date": "2026-06-27T21:00:00.000Z",
+    "round": "Group J - 3",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
+    "venueName": "AT&T Stadium",
+    "venueCity": "Dallas (Arlington, Texas)",
+    "homeTeam": {
+      "id": 40,
+      "name": "Jordan",
+      "logo": null
+    },
+    "awayTeam": {
+      "id": 37,
+      "name": "Argentina",
+      "logo": null
+    },
+    "goals": {
+      "home": 1,
       "away": 3,
       "homePenalty": null,
       "awayPenalty": null
@@ -1978,8 +1978,8 @@
     "fixtureId": 80,
     "date": "2026-07-01T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -1993,8 +1993,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }

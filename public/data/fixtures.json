@@ -2003,8 +2003,8 @@
     "fixtureId": 82,
     "date": "2026-07-01T13:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -2018,8 +2018,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2043,8 +2043,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }

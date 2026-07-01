@@ -1928,8 +1928,8 @@
     "fixtureId": 77,
     "date": "2026-06-30T17:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -2238,8 +2238,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 77",
+      "id": 33,
+      "name": "France",
       "logo": null
     },
     "goals": {

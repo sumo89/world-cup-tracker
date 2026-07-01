@@ -1978,8 +1978,8 @@
     "fixtureId": 80,
     "date": "2026-07-01T12:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -1993,7 +1993,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 2,
       "away": 1,
       "homePenalty": null,
       "awayPenalty": null
@@ -2288,8 +2288,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 80",
+      "id": 45,
+      "name": "England",
       "logo": null
     },
     "goals": {

@@ -2028,8 +2028,8 @@
     "fixtureId": 81,
     "date": "2026-07-01T17:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -2043,7 +2043,7 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
+      "home": 2,
       "away": 0,
       "homePenalty": null,
       "awayPenalty": null
@@ -2333,8 +2333,8 @@
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 81",
+      "id": 13,
+      "name": "United States",
       "logo": null
     },
     "awayTeam": {

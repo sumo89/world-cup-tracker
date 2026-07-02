@@ -2003,8 +2003,8 @@
     "fixtureId": 82,
     "date": "2026-07-01T13:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -2028,8 +2028,8 @@
     "fixtureId": 81,
     "date": "2026-07-01T17:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco Bay Area (Santa Clara)",
     "homeTeam": {
@@ -2043,8 +2043,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2338,8 +2338,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 82",
+      "id": 25,
+      "name": "Belgium",
       "logo": null
     },
     "goals": {

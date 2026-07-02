@@ -2078,8 +2078,8 @@
     "fixtureId": 83,
     "date": "2026-07-02T19:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -2118,8 +2118,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }

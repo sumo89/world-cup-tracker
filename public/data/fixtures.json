@@ -2128,8 +2128,8 @@
     "fixtureId": 88,
     "date": "2026-07-03T13:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -2145,8 +2145,8 @@
     "goals": {
       "home": 1,
       "away": 1,
-      "homePenalty": null,
-      "awayPenalty": null
+      "homePenalty": 2,
+      "awayPenalty": 4
     }
   },
   {
@@ -2363,8 +2363,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 88",
+      "id": 26,
+      "name": "Egypt",
       "logo": null
     },
     "goals": {

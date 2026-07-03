@@ -2153,8 +2153,8 @@
     "fixtureId": 86,
     "date": "2026-07-03T18:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -2168,8 +2168,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2193,8 +2193,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }

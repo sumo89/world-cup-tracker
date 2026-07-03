@@ -2078,8 +2078,8 @@
     "fixtureId": 83,
     "date": "2026-07-02T19:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BMO Field",
     "venueCity": "Toronto",
     "homeTeam": {
@@ -2093,8 +2093,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": 2,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2103,8 +2103,8 @@
     "fixtureId": 85,
     "date": "2026-07-02T20:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -2118,8 +2118,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2308,8 +2308,8 @@
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 83",
+      "id": 41,
+      "name": "Portugal",
       "logo": null
     },
     "awayTeam": {

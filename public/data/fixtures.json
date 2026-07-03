@@ -2143,8 +2143,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2168,8 +2168,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": null,
+      "away": null,
       "homePenalty": null,
       "awayPenalty": null
     }

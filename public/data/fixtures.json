@@ -2103,8 +2103,8 @@
     "fixtureId": 85,
     "date": "2026-07-02T20:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
@@ -2118,7 +2118,7 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
+      "home": 2,
       "away": 0,
       "homePenalty": null,
       "awayPenalty": null
@@ -2383,8 +2383,8 @@
     "venueName": "BC Place",
     "venueCity": "Vancouver",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 85",
+      "id": 8,
+      "name": "Switzerland",
       "logo": null
     },
     "awayTeam": {

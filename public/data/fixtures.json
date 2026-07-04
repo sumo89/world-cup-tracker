@@ -2169,7 +2169,7 @@
     },
     "goals": {
       "home": 1,
-      "away": 0,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }

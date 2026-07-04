@@ -2228,8 +2228,8 @@
     "fixtureId": 89,
     "date": "2026-07-04T17:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia",
     "homeTeam": {
@@ -2244,7 +2244,7 @@
     },
     "goals": {
       "home": 0,
-      "away": 0,
+      "away": 1,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2408,13 +2408,13 @@
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 89",
+      "id": 33,
+      "name": "France",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 90",
+      "id": 10,
+      "name": "Morocco",
       "logo": null
     },
     "goals": {

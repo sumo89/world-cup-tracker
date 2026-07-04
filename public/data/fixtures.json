@@ -2153,8 +2153,8 @@
     "fixtureId": 86,
     "date": "2026-07-03T18:00:00.000Z",
     "round": "Round of 32",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -2168,8 +2168,8 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
-      "away": 1,
+      "home": 3,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2178,8 +2178,8 @@
     "fixtureId": 87,
     "date": "2026-07-03T20:30:00.000Z",
     "round": "Round of 32",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
@@ -2193,8 +2193,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2358,8 +2358,8 @@
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 86",
+      "id": 37,
+      "name": "Argentina",
       "logo": null
     },
     "awayTeam": {
@@ -2388,8 +2388,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 87",
+      "id": 44,
+      "name": "Colombia",
       "logo": null
     },
     "goals": {

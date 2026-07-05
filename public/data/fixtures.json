@@ -2253,8 +2253,8 @@
     "fixtureId": 91,
     "date": "2026-07-05T16:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
@@ -2268,8 +2268,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 0,
+      "home": 1,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2458,8 +2458,8 @@
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 91",
+      "id": 36,
+      "name": "Norway",
       "logo": null
     },
     "awayTeam": {

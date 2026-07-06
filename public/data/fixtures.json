@@ -2278,8 +2278,8 @@
     "fixtureId": 92,
     "date": "2026-07-05T18:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Estadio Azteca",
     "venueCity": "Mexico City",
     "homeTeam": {
@@ -2293,8 +2293,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 3,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2463,8 +2463,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 92",
+      "id": 45,
+      "name": "England",
       "logo": null
     },
     "goals": {

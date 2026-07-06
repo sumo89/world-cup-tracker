@@ -2303,8 +2303,8 @@
     "fixtureId": 93,
     "date": "2026-07-06T14:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -2433,8 +2433,8 @@
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 93",
+      "id": 29,
+      "name": "Spain",
       "logo": null
     },
     "awayTeam": {

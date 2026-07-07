@@ -2328,8 +2328,8 @@
     "fixtureId": 94,
     "date": "2026-07-06T17:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Lumen Field",
     "venueCity": "Seattle",
     "homeTeam": {
@@ -2343,8 +2343,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 4,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2438,8 +2438,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 94",
+      "id": 25,
+      "name": "Belgium",
       "logo": null
     },
     "goals": {

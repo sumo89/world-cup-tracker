@@ -2353,8 +2353,8 @@
     "fixtureId": 95,
     "date": "2026-07-07T12:00:00.000Z",
     "round": "Round of 16",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -2368,8 +2368,8 @@
       "logo": null
     },
     "goals": {
-      "home": 0,
-      "away": 1,
+      "home": 3,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2483,8 +2483,8 @@
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 95",
+      "id": 37,
+      "name": "Argentina",
       "logo": null
     },
     "awayTeam": {

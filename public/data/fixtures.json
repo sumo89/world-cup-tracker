@@ -2403,8 +2403,8 @@
     "fixtureId": 97,
     "date": "2026-07-09T16:00:00.000Z",
     "round": "Quarter-finals",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston (Foxborough)",
     "homeTeam": {

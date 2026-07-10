@@ -314,7 +314,7 @@ function App() {
   const [newUser, setNewUser] = useState('')
   const [selectedRound, setSelectedRound] = useState('all')
   const [filter, setFilter] = useState<MatchFilter>('upcoming')
-  const [activeTab, setActiveTab] = useState<StageTab>('round-of-32-16')
+  const [activeTab, setActiveTab] = useState<StageTab>('knockouts')
   const [userToRemove, setUserToRemove] = useState<string | null>(null)
 
   useEffect(() => {

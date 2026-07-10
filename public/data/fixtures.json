@@ -2428,8 +2428,8 @@
     "fixtureId": 98,
     "date": "2026-07-10T12:00:00.000Z",
     "round": "Quarter-finals",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {
@@ -2443,7 +2443,7 @@
       "logo": null
     },
     "goals": {
-      "home": 1,
+      "home": 2,
       "away": 1,
       "homePenalty": null,
       "awayPenalty": null
@@ -2513,8 +2513,8 @@
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 98",
+      "id": 29,
+      "name": "Spain",
       "logo": null
     },
     "goals": {

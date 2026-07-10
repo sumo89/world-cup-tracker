@@ -2428,8 +2428,8 @@
     "fixtureId": 98,
     "date": "2026-07-10T12:00:00.000Z",
     "round": "Quarter-finals",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles (Inglewood)",
     "homeTeam": {

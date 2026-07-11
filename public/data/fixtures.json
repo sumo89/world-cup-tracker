@@ -2453,8 +2453,8 @@
     "fixtureId": 99,
     "date": "2026-07-11T17:00:00.000Z",
     "round": "Quarter-finals",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -2469,7 +2469,7 @@
     },
     "goals": {
       "home": 1,
-      "away": 1,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }
@@ -2533,8 +2533,8 @@
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 99",
+      "id": 45,
+      "name": "England",
       "logo": null
     },
     "awayTeam": {

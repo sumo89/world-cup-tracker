@@ -376,27 +376,77 @@ function App() {
   }, [users])
 
   useEffect(() => {
-    if (!supabase || Object.keys(userIdByName).length === 0) return
+    if (!supabase) return
 
     const loadPredictions = async () => {
       try {
-        const { data: dbPredictions } = await supabase!
-          .from('predictions')
-          .select('fixture_id, user_id, choice')
+        const { data: dbUsers } = await supabase!
+          .from('users')
+          .select('id, name')
+        const userNameById = new Map<string, string>()
+        for (const user of dbUsers || []) {
+          userNameById.set(user.id, user.name)
+        }
+
+        const pageSize = 1000
+        let from = 0
+        let allPredictions: Array<{
+          fixture_id: number
+          user_id: string
+          choice: PredictionChoice
+        }> = []
+
+        while (true) {
+          const { data, error } = await supabase!
+            .from('predictions')
+            .select('fixture_id, user_id, choice')
+            .range(from, from + pageSize - 1)
+
+          if (error) {
+            throw error
+          }
+
+          const batch = data || []
+          allPredictions = allPredictions.concat(batch)
+
+          if (batch.length < pageSize) {
+            break
+          }
+          from += pageSize
+        }
+
+        const dbPredictions = allPredictions
         if (dbPredictions && dbPredictions.length > 0) {
           const predictionsFromDb: PredictionsByFixture = {}
+          const usersFromPredictions = new Set<string>()
           for (const pred of dbPredictions) {
             const fixtureId = String(pred.fixture_id)
             if (!predictionsFromDb[fixtureId]) {
               predictionsFromDb[fixtureId] = {}
             }
-            const userName = Object.entries(userIdByName).find(
-              ([, id]) => id === pred.user_id,
-            )?.[0]
+
+            const userName = userNameById.get(pred.user_id)
+
             if (userName) {
               predictionsFromDb[fixtureId][userName] = pred.choice
+              usersFromPredictions.add(userName)
             }
           }
+
+          if (usersFromPredictions.size > 0) {
+            setUsers((prev) => {
+              const mergedUsers = new Set(prev)
+              let changed = false
+              for (const userName of usersFromPredictions) {
+                if (!mergedUsers.has(userName)) {
+                  mergedUsers.add(userName)
+                  changed = true
+                }
+              }
+              return changed ? Array.from(mergedUsers) : prev
+            })
+          }
+
           // Merge instead of replacing to avoid wiping a fresh local pick while DB load is still in-flight.
           setPredictions((prev) => {
             const merged: PredictionsByFixture = { ...predictionsFromDb }
@@ -414,7 +464,7 @@ function App() {
       }
     }
     void loadPredictions()
-  }, [userIdByName])
+  }, [])
 
   useEffect(() => {
     localStorage.setItem(PREDICTIONS_STORAGE_KEY, JSON.stringify(predictions))

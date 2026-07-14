@@ -2503,8 +2503,8 @@
     "fixtureId": 101,
     "date": "2026-07-14T14:00:00.000Z",
     "round": "Semi-finals",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas (Arlington, Texas)",
     "homeTeam": {
@@ -2519,7 +2519,7 @@
     },
     "goals": {
       "home": 0,
-      "away": 1,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }

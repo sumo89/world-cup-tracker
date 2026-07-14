@@ -384,20 +384,30 @@ function App() {
           .from('predictions')
           .select('fixture_id, user_id, choice')
         if (dbPredictions && dbPredictions.length > 0) {
-          const predictions: PredictionsByFixture = {}
+          const predictionsFromDb: PredictionsByFixture = {}
           for (const pred of dbPredictions) {
             const fixtureId = String(pred.fixture_id)
-            if (!predictions[fixtureId]) {
-              predictions[fixtureId] = {}
+            if (!predictionsFromDb[fixtureId]) {
+              predictionsFromDb[fixtureId] = {}
             }
             const userName = Object.entries(userIdByName).find(
               ([, id]) => id === pred.user_id,
             )?.[0]
             if (userName) {
-              predictions[fixtureId][userName] = pred.choice
+              predictionsFromDb[fixtureId][userName] = pred.choice
             }
           }
-          setPredictions(predictions)
+          // Merge instead of replacing to avoid wiping a fresh local pick while DB load is still in-flight.
+          setPredictions((prev) => {
+            const merged: PredictionsByFixture = { ...predictionsFromDb }
+            for (const [fixtureId, userChoices] of Object.entries(prev)) {
+              merged[fixtureId] = {
+                ...(merged[fixtureId] ?? {}),
+                ...userChoices,
+              }
+            }
+            return merged
+          })
         }
       } catch (err) {
         console.error('Failed to load predictions from Supabase:', err)
@@ -602,7 +612,7 @@ function App() {
         setSyncingToDb(true)
         const syncPrediction = async () => {
           try {
-            await db.from('predictions').upsert(
+            const { error: upsertError } = await db.from('predictions').upsert(
               {
                 user_id: userId,
                 fixture_id: fixtureId,
@@ -610,6 +620,39 @@ function App() {
               },
               { onConflict: 'user_id,fixture_id' },
             )
+
+            if (upsertError) {
+              // Fallback for environments where upsert conflict target is not available.
+              const { data: existing, error: selectError } = await db
+                .from('predictions')
+                .select('id')
+                .eq('user_id', userId)
+                .eq('fixture_id', fixtureId)
+                .maybeSingle()
+
+              if (selectError) {
+                throw selectError
+              }
+
+              if (existing?.id) {
+                const { error: updateError } = await db
+                  .from('predictions')
+                  .update({ choice })
+                  .eq('id', existing.id)
+                if (updateError) {
+                  throw updateError
+                }
+              } else {
+                const { error: insertError } = await db.from('predictions').insert({
+                  user_id: userId,
+                  fixture_id: fixtureId,
+                  choice,
+                })
+                if (insertError) {
+                  throw insertError
+                }
+              }
+            }
           } catch (err) {
             console.error('Failed to sync prediction to Supabase:', err)
           } finally {

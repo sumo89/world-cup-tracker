@@ -2528,8 +2528,8 @@
     "fixtureId": 102,
     "date": "2026-07-15T15:00:00.000Z",
     "round": "Semi-finals",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta",
     "homeTeam": {
@@ -2543,8 +2543,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 0,
       "homePenalty": null,
       "awayPenalty": null
     }

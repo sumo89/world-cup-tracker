@@ -2558,13 +2558,13 @@
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
-      "id": 0,
-      "name": "Loser Match 101",
+      "id": 33,
+      "name": "France",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Loser Match 102",
+      "id": 45,
+      "name": "England",
       "logo": null
     },
     "goals": {
@@ -2583,13 +2583,13 @@
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
-      "id": 0,
-      "name": "Winner Match 101",
+      "id": 29,
+      "name": "Spain",
       "logo": null
     },
     "awayTeam": {
-      "id": 0,
-      "name": "Winner Match 102",
+      "id": 37,
+      "name": "Argentina",
       "logo": null
     },
     "goals": {

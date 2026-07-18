@@ -2553,8 +2553,8 @@
     "fixtureId": 103,
     "date": "2026-07-18T17:00:00.000Z",
     "round": "Third Place Play-off",
-    "statusShort": "NS",
-    "statusLong": "Not Started",
+    "statusShort": "LIVE",
+    "statusLong": "Live (live)",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami (Miami Gardens)",
     "homeTeam": {
@@ -2568,8 +2568,8 @@
       "logo": null
     },
     "goals": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 2,
       "homePenalty": null,
       "awayPenalty": null
     }

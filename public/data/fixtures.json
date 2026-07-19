@@ -2578,8 +2578,8 @@
     "fixtureId": 104,
     "date": "2026-07-19T15:00:00.000Z",
     "round": "Final",
-    "statusShort": "LIVE",
-    "statusLong": "Live (live)",
+    "statusShort": "FT",
+    "statusLong": "Match Finished",
     "venueName": "MetLife Stadium",
     "venueCity": "New York/New Jersey (East Rutherford)",
     "homeTeam": {
